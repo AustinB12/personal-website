@@ -1,0 +1,4 @@
+[build]
+base = "personal-website/"
+publish = "personal-website/build/"
+command = "npm run build"
