@@ -7,8 +7,8 @@
 <animateTransform attributeName="transform"
         attributeType="XML"
         type="translate"
-        values="15,0;-15,0;15,0"
-        dur="2s"
+        values="0,0;0,0;20,0;0,0"
+        dur="1s"
         repeatCount="indefinite">
         
     </animateTransform>
@@ -18,10 +18,9 @@
 <animateTransform attributeName="transform"
         attributeType="XML"
         type="translate"
-        values="-15,0;15,0;-15,0"
-        dur="2s"
+        values="-20,0;0,0;0,0;-20,0"
+        dur="1s"
         repeatCount="indefinite">
-        
     </animateTransform>
 </path>
 
@@ -89,18 +88,18 @@
         attributeType="XML"
         type="translate"
         values="5,5;-5,-5;5,5"
-        dur="3s"
+        dur="1s"
         repeatCount="indefinite">
         
     </animateTransform>
 </path>
 
 <path d="M576.61 351.34L577.34 352.36L578 353.42L578.61 354.53L579.15 355.66L579.62 356.84L580.03 358.05L580.37 359.28L580.64 360.55L580.84 361.84L580.96 363.16L581 364.49L580.96 365.83L580.84 367.14L580.64 368.43L580.37 369.7L580.03 370.94L579.62 372.14L579.15 373.32L578.61 374.46L578 375.56L577.34 376.62L576.61 377.64L575.84 378.62L575 379.55L574.12 380.44L573.19 381.27L572.21 382.04L571.19 382.77L570.13 383.43L569.03 384.04L567.89 384.58L566.71 385.06L565.5 385.47L564.27 385.81L563 386.07L561.71 386.27L560.4 386.39L559.06 386.43L557.72 386.39L557.63 386.38L557.6 386.43L554.26 386.41L550.97 386.36L547.74 386.27L544.55 386.15L541.42 385.99L538.34 385.8L535.31 385.58L532.33 385.32L529.4 385.02L526.52 384.69L523.69 384.33L520.92 383.93L518.19 383.49L515.52 383.02L512.9 382.52L510.33 381.98L507.81 381.41L505.34 380.8L502.93 380.16L500.56 379.48L498.25 378.77L495.98 378.02L493.77 377.24L491.61 376.43L489.5 375.57L487.44 374.69L485.43 373.77L483.48 372.81L481.57 371.82L479.72 370.8L477.92 369.74L476.17 368.64L474.47 367.52L472.82 366.35L471.22 365.15L469.67 363.92L468.18 362.65L466.73 361.35L465.34 360.01L464 358.64L500.56 217.74L575.8 350.32L575.84 350.36L575.84 350.36L576.61 351.34Z" id="b9nXzXOXL">
-<animateTransform attributeName="transform"
+    <animateTransform attributeName="transform"
         attributeType="XML"
         type="translate"
         values="-5,5;5,-5;-5,5"
-        dur="3s"
+        dur="1s"
         repeatCount="indefinite">
         
     </animateTransform>
