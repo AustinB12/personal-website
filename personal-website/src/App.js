@@ -1,4 +1,7 @@
 import React from 'react';
+
+import Header from './components/header/header';
+import Intro from './components/intro/intro';
 import logo from './DuolingoBird.svg';
 import './App.css';
 
@@ -6,9 +9,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello! My name is Austin Baird, and I'm a web developer!</h1>
-        <img className="App-logo" src={logo} alt="logo" />
+        <Header></Header>
       </header>
+      <body className={'App-Body'}>
+        <Intro></Intro>
+        <Intro></Intro>
+        <img src={logo} alt="logo" />
+      </body>
     </div>
   );
 }

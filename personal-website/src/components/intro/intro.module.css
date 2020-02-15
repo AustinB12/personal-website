@@ -1,0 +1,10 @@
+.introWrapper {
+    width: 100%;
+    height: 1000px;
+    background-color: #484a4d;
+    display: flex;
+}
+
+.introContent {
+    margin-top: 150px;
+}
