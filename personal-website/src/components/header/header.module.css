@@ -1,0 +1,6 @@
+.headerWrapper {
+    width: 100%;
+    min-height: 150px;
+    background-color: #929496;
+    position: fixed;
+}
