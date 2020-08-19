@@ -1,0 +1,12 @@
+.introWrapper {
+  width: 100%;
+  height: 1000px;
+  background-color: #484a4d;
+}
+
+/* .introContent {
+  margin-top: 150px;
+} */
+.introContent h3 {
+  margin: 0px;
+}

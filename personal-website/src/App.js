@@ -1,23 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import Header from './components/header/header';
-import Intro from './components/intro/intro';
-import logo from './DuolingoBird.svg';
-import './App.css';
+import Header from "./components/header/header";
+import Intro from "./components/intro/intro";
+import "./App.css";
+import "./variables.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <Header></Header>
-      </header>
-      <body className={'App-Body'}>
-        <Intro></Intro>
-        <Intro></Intro>
-        <img src={logo} alt="logo" />
+      <Header></Header>
+      <body className={"App-Body"}>
+        <Intro />
+        <Intro />
+        <Intro />
+        <Intro />
+        <Intro />
+        <Intro />
       </body>
     </div>
   );
-}
+};
 
 export default App;
