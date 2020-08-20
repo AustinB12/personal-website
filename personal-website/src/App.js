@@ -2,21 +2,25 @@ import React from "react";
 
 import Header from "./components/header/header";
 import Intro from "./components/intro/intro";
-import "./App.css";
+import Skills from "./components/skills/skills";
+import Animations from "./components/animations/animations";
+import Projects from "./components/projects/projects";
+import Hobbies from "./components/hobbies/hobbies";
 import "./variables.css";
+import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
       <Header></Header>
-      <body className={"App-Body"}>
+      <div className={"App-Body"}>
+        <div style={{ height: "10vw" }}></div>
         <Intro />
-        <Intro />
-        <Intro />
-        <Intro />
-        <Intro />
-        <Intro />
-      </body>
+        <Skills />
+        <Animations />
+        <Projects />
+        <Hobbies />
+      </div>
     </div>
   );
 };

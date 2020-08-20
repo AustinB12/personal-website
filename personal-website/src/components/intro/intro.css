@@ -1,12 +1,26 @@
 .introWrapper {
   width: 100%;
-  height: 1000px;
-  background-color: #484a4d;
+  height: auto;
+  background-color: var(--myRed);
+  text-align: center;
+  overflow: hidden;
 }
 
-/* .introContent {
-  margin-top: 150px;
-} */
+.introContent {
+  width: 70vw;
+  margin: 50px 0px;
+  display: inline-block;
+  background-color: var(--myLemon);
+  color: black;
+  height: 90%;
+}
 .introContent h3 {
-  margin: 0px;
+  font-size: calc(15px + 4vw);
+  margin: 0;
+}
+
+.introContent p {
+  font-size: calc(10px + 1vw);
+  margin: 10px 40px;
+  overflow: auto;
 }
