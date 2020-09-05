@@ -1,0 +1,18 @@
+.hobbiesWrapper {
+  height: auto;
+  background-color: var(--darkBlue);
+  overflow: auto;
+}
+
+.hobbiesWrapper h1 {
+  font-size: calc(15px + 3vw);
+  margin: 0;
+}
+
+.hobbiesWrapper .hobbiesContent {
+  width: 70vw;
+  margin: 50px 0px;
+  display: inline-block;
+  background-color: var(--blue);
+  height: 90%;
+}

@@ -4,8 +4,10 @@ import "./hobbies.css";
 
 const Hobbies = () => {
   return (
-    <div className="hobbiesWrapper">
-      <h1>Hobbies</h1>
+    <div className="hobbiesWrapper" id="Hobbies">
+      <div className="hobbiesContent">
+        <h1>Hobbies</h1>
+      </div>
     </div>
   );
 };

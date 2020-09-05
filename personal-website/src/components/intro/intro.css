@@ -1,17 +1,16 @@
 .introWrapper {
-  width: 100%;
+  width: 100vw;
   height: auto;
-  background-color: var(--myRed);
+  background-color: var(--darkBlue);
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .introContent {
   width: 70vw;
   margin: 50px 0px;
   display: inline-block;
-  background-color: var(--myLemon);
-  color: black;
+  background-color: var(--blue);
   height: 90%;
 }
 .introContent h3 {

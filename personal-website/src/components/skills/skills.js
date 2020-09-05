@@ -4,8 +4,10 @@ import "./skills.css";
 
 const Skills = () => {
   return (
-    <div className="skillsWrapper">
-      <h1>Skills</h1>
+    <div className="skillsWrapper" id="Skills">
+      <div className="skillsContent">
+        <h1>Skills</h1>
+      </div>
     </div>
   );
 };
