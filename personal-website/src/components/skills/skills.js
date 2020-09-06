@@ -6,7 +6,13 @@ const Skills = () => {
   return (
     <div className="skillsWrapper" id="Skills">
       <div className="skillsContent">
-        <h1>Skills</h1>
+        <h3>Skills</h3>
+        <ul>
+          <li>React</li>
+          <li>.NET</li>
+          <li>HTML & CSS</li>
+          <li>SVG (Animation & Design)</li>
+        </ul>
       </div>
     </div>
   );

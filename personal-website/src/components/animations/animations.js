@@ -6,7 +6,7 @@ const Animations = () => {
   return (
     <div className="animationWrapper" id="Animations">
       <div className="animationContent">
-        <h1>Animations</h1>
+        <h3>Animations</h3>
       </div>
     </div>
   );

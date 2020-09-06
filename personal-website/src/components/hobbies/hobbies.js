@@ -6,7 +6,7 @@ const Hobbies = () => {
   return (
     <div className="hobbiesWrapper" id="Hobbies">
       <div className="hobbiesContent">
-        <h1>Hobbies</h1>
+        <h3>Hobbies</h3>
       </div>
     </div>
   );

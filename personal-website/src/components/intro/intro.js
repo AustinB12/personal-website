@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <div className="introWrapper" id="Me">
       <div className="introContent">
-        <h3 style={{ paddingTop: "20px" }}>Hello World!</h3>
+        <h3>Hello World!</h3>
         <p>My name is Austin Baird, and I'm a web developer.</p>
         <p>
           I graduated from the University of North Carolina at Wilmington in

@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className="projectsWrapper" id="Projects">
       <div className="projectsContent">
-        <h1>Projects</h1>
+        <h3>Projects</h3>
       </div>
     </div>
   );

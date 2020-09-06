@@ -14,9 +14,6 @@ const App = () => {
     <div className="App">
       <Header></Header>
       <div className={"App-Body"}>
-        <div
-          style={{ height: "10vw", minHeight: "50px", maxHeight: "100px" }}
-        ></div>
         <Intro />
         <Skills />
         <Animations />

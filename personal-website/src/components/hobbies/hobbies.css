@@ -4,12 +4,14 @@
   overflow: auto;
 }
 
-.hobbiesWrapper h1 {
+.hobbiesWrapper h3 {
   font-size: calc(15px + 3vw);
+  padding-top: 20px;
   margin: 0;
 }
 
 .hobbiesWrapper .hobbiesContent {
+  border-radius: 20px;
   width: 70vw;
   margin: 50px 0px;
   display: inline-block;
