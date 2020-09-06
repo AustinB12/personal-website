@@ -10,7 +10,7 @@ const Intro = () => {
         <p>My name is Austin Baird, and I'm a web developer.</p>
         <p>
           I graduated from the University of North Carolina at Wilmington in
-          2015 with a mojor in Computer Science and a minor in Mathematics. My
+          2019 with a mojor in Computer Science and a minor in Mathematics. My
           work experience includes doing software development for Corning
           Incorporated, EMS Linq, and Ally Financial where I work currently.
         </p>
