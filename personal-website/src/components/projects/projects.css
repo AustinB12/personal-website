@@ -1,0 +1,20 @@
+.projectsWrapper {
+  height: auto;
+  background-color: var(--darkBlue);
+  overflow: auto;
+}
+
+.projectsWrapper h3 {
+  font-size: calc(15px + 3vw);
+  margin: 0;
+  padding-top: 20px;
+}
+
+.projectsWrapper .projectsContent {
+  border-radius: 20px;
+  width: 70vw;
+  margin: 50px 0px;
+  display: inline-block;
+  background-color: var(--darkestBlue);
+  height: 90%;
+}

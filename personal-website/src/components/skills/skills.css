@@ -1,0 +1,24 @@
+.skillsWrapper {
+  height: auto;
+  background-color: var(--darkBlue);
+  overflow: auto;
+}
+
+.skillsWrapper .skillsContent h3 {
+  font-size: calc(15px + 3vw);
+  padding-top: 20px;
+  margin: 0;
+}
+
+.skillsWrapper .skillsContent ul {
+  text-align: left;
+}
+
+.skillsWrapper .skillsContent {
+  width: 70vw;
+  margin: 50px 0px;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: var(--darkestBlue);
+  height: 90%;
+}

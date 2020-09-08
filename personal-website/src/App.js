@@ -1,16 +1,27 @@
-import React from 'react';
-import logo from './DuolingoBird.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import Header from "./components/header/header";
+import Intro from "./components/intro/intro";
+import Skills from "./components/skills/skills";
+import Animations from "./components/animations/animations";
+import Projects from "./components/projects/projects";
+import Hobbies from "./components/hobbies/hobbies";
+import "./variables.css";
+import "./App.css";
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello! My name is Austin Baird, and I'm a web developer!</h1>
-        <img className="App-logo" src={logo} alt="logo" />
-      </header>
+      <Header></Header>
+      <div className={"App-Body"}>
+        <Intro />
+        <Skills />
+        <Animations />
+        <Projects />
+        <Hobbies />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

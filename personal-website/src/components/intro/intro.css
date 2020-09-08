@@ -1,0 +1,29 @@
+.introWrapper {
+  padding-top: 10vw;
+  width: 100vw;
+  height: auto;
+  background-color: var(--darkBlue);
+  text-align: center;
+  overflow: auto;
+}
+
+.introWrapper .introContent {
+  border-radius: 20px;
+  width: 70vw;
+  margin: 50px 0px;
+  display: inline-block;
+  background-color: var(--blue);
+  height: 90%;
+}
+
+.introContent h3 {
+  font-size: calc(15px + 4vw);
+  margin: 0;
+  padding-top: 20px;
+}
+
+.introContent p {
+  font-size: calc(10px + 1vw);
+  margin: 10px 40px;
+  overflow: auto;
+}

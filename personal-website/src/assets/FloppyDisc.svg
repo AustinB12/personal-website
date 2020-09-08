@@ -1,0 +1,15 @@
+<svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="FloppyDisc">
+<rect id="Rectangle 1" width="250" height="250" rx="10" fill="#3D3C3C"/>
+<path id="Rectangle 2" d="M52 0H198V84C198 89.5229 193.523 94 188 94H62C56.4771 94 52 89.5229 52 84V0Z" fill="#C4C4C4"/>
+<rect id="Rectangle 3" x="73" y="12" width="28" height="66" fill="#3D3C3C"/>
+<rect id="Rectangle 4" x="29" y="120" width="191" height="118" rx="10" fill="#FCFAEC"/>
+<path id="Vector 1" d="M34 140H216" stroke="#7B7B7B"/>
+<path id="Vector 3" d="M34 172H216" stroke="#7B7B7B"/>
+<path id="Vector 5" d="M34 204H216" stroke="#7B7B7B"/>
+<path id="Vector 2" d="M34 156H216" stroke="#7B7B7B"/>
+<path id="Vector 4" d="M34 188H216" stroke="#7B7B7B"/>
+<path id="Vector 6" d="M34 220H216" stroke="#7B7B7B"/>
+<text id="Video Games!" fill="black" xml:space="preserve" style="white-space: pre" font-family="Reenie Beanie" font-size="48" font-weight="500" letter-spacing="0em"><tspan x="86.5156" y="165">Video </tspan><tspan x="65.1875" y="213">Games!</tspan></text>
+</g>
+</svg>
