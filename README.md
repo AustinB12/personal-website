@@ -1,7 +1,3 @@
-# personal-website
+# Hello There
 
-My Personal Website
-
-What's up!?
-
-I'm still working on the README lol
+This is the README for my personal website
