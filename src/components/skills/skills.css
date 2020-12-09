@@ -1,6 +1,6 @@
 .skillsWrapper {
   height: auto;
-  background-color: var(--darkBlue);
+  /* background-color: var(--darkBlue); */
   overflow: auto;
 }
 

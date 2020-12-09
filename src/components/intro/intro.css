@@ -2,7 +2,7 @@
   padding-top: 10vw;
   width: 100vw;
   height: auto;
-  background-color: var(--darkBlue);
+  /* background-color: var(--darkBlue); */
   text-align: center;
   overflow: auto;
 }

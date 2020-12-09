@@ -4,4 +4,10 @@
   --blue: #034078;
   --lightBlue: #1282a2;
   --white: #fefcfb;
+
+  /* Light Theme:  */
+
+  /* Dark Theme:  */
+  --dark-bg: #0d1117;
+  --dark-accent: #161b22;
 }

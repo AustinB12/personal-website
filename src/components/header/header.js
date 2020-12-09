@@ -1,38 +1,60 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { ReactComponent as Bg } from "../../assets/Burger.svg";
+import Ab from "../../assets/ab.svg";
 
 import "./header.css";
 
-class Header extends Component {
-  render() {
-    return (
-      <div className="headerWrapper">
-        <div className="Mobile">
-          <Bg />
-        </div>
-        <div className="Desktop">
-          <ul>
-            <a href="#Me">
-              <li>About Me</li>
-            </a>
-            <a href="#Skills">
-              <li>Skills</li>
-            </a>
-            <a href="#Animations">
-              <li>Animations</li>
-            </a>
-            <a href="#Projects">
-              <li>Projects</li>
-            </a>
-            <a href="#Hobbies">
-              <li>Hobbies</li>
-            </a>
-          </ul>
-        </div>
-      </div>
-    );
+const Header = (props) => {
+  let mainClass = "headerWrapper ";
+
+  if (props.amDark) {
+    mainClass = mainClass + "dark";
   }
-}
+
+  function handleClick() {
+    props.toggleDark(!props.amDark);
+  }
+
+  return (
+    <div className={mainClass}>
+      <div className={"Mobile"}>
+        <Bg />
+      </div>
+      <div className="Desktop">
+        <img src={Ab} alt="initials"></img>
+        <div className={"theme-container"}>
+          <input type="checkbox" id="checkbox" onClick={() => handleClick()} />
+          {!props.amDark ? (
+            <span role="img" aria-label="sun with happy face">
+              🌞
+            </span>
+          ) : (
+            <span role="img" aria-label="moon with happy face">
+              🌚
+            </span>
+          )}
+        </div>
+        <ul className={"link-holder"}>
+          <li className={"header-item"}>
+            <a href="#Me">About Me</a>
+          </li>
+          <li className={"header-item"}>
+            <a href="#Skills">Skills</a>
+          </li>
+          <li className={"header-item"}>
+            <a href="#Animations">Animations</a>
+          </li>
+          <li className={"header-item"}>
+            <a href="#Projects">Projects</a>
+          </li>
+          <li className={"header-item"}>
+            <a href="#Hobbies">Hobbies</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 export default Header;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Header from "./components/header/header";
 import Intro from "./components/intro/intro";
@@ -10,9 +10,11 @@ import "./variables.css";
 import "./App.css";
 
 const App = () => {
+  const [isDark, setDark] = useState(false);
+
   return (
     <div className="App">
-      <Header></Header>
+      <Header amDark={isDark} toggleDark={setDark} />
       <div className={"App-Body"}>
         <Intro />
         <Skills />
