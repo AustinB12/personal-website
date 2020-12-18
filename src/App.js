@@ -12,10 +12,12 @@ import "./App.css";
 const App = () => {
   const [isDark, setDark] = useState(false);
 
+  let bodyClass = isDark ? "App-Body dark" : "App-Body";
+
   return (
     <div className="App">
       <Header amDark={isDark} toggleDark={setDark} />
-      <div className={"App-Body"}>
+      <div className={bodyClass}>
         <Intro />
         <Skills />
         <Animations />
