@@ -12,7 +12,10 @@ const Header = (props) => {
   return (
     <div className={"headerWrapper"}>
       <div className={"Mobile"}>
-        <Bg />
+        <Bg
+          className={"burger"}
+          onClick={() => console.log("Hey, you clicked me!")}
+        />
       </div>
       <div className="Desktop">
         <svg

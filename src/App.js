@@ -41,8 +41,8 @@ const setTheme = (isDark) => {
   } else {
     IAmRoot.style.setProperty("--background", "#fcf8ec");
     IAmRoot.style.setProperty("--textColor", "#0f0f0f");
-    IAmRoot.style.setProperty("--accentLight", "#d0e8f2");
-    IAmRoot.style.setProperty("--accentMedium", "#79a3b1");
+    IAmRoot.style.setProperty("--accentLight", "#e0eaee");
+    IAmRoot.style.setProperty("--accentMedium", "#ededed");
     IAmRoot.style.setProperty("--accentDark", "#456268");
   }
 };
