@@ -1,6 +1,9 @@
 .projectsWrapper {
+  /* Colors  */
+  color: var(--textColor);
+  background-color: var(--background);
+
   height: auto;
-  /* background-color: var(--darkBlue); */
   overflow: auto;
 }
 
@@ -11,10 +14,12 @@
 }
 
 .projectsWrapper .projectsContent {
+  border: 2px solid var(--accentMedium);
+  background-color: var(--accentLight);
+
   border-radius: 20px;
   width: 70vw;
   margin: 50px 0px;
   display: inline-block;
-  background-color: var(--darkestBlue);
   height: 90%;
 }

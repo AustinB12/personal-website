@@ -1,4 +1,8 @@
 .animationWrapper {
+  /* Colors  */
+  color: var(--textColor);
+  background-color: var(--background);
+
   height: auto;
   overflow: auto;
 }
@@ -10,10 +14,12 @@
 }
 
 .animationWrapper .animationContent {
+  border: 2px solid var(--accentMedium);
+  background-color: var(--accentLight);
+
   width: 70vw;
   border-radius: 20px;
   margin: 50px 0px;
   display: inline-block;
-  background-color: var(--blue);
   height: 90%;
 }

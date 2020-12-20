@@ -12,12 +12,13 @@ import "./App.css";
 const App = () => {
   const [isDark, setDark] = useState(false);
 
-  let bodyClass = isDark ? "App-Body dark" : "App-Body";
+  //? Will change the css properties if needed
+  setTheme(isDark);
 
   return (
     <div className="App">
       <Header amDark={isDark} toggleDark={setDark} />
-      <div className={bodyClass}>
+      <div className={"App-Body"}>
         <Intro />
         <Skills />
         <Animations />
@@ -26,6 +27,24 @@ const App = () => {
       </div>
     </div>
   );
+};
+
+const setTheme = (isDark) => {
+  let IAmRoot = document.documentElement;
+
+  if (isDark) {
+    IAmRoot.style.setProperty("--background", "#0d1117");
+    IAmRoot.style.setProperty("--textColor", "#eff8ff");
+    IAmRoot.style.setProperty("--accentLight", "#616872");
+    IAmRoot.style.setProperty("--accentMedium", "#424a55");
+    IAmRoot.style.setProperty("--accentDark", "#161b22");
+  } else {
+    IAmRoot.style.setProperty("--background", "#fcf8ec");
+    IAmRoot.style.setProperty("--textColor", "#0f0f0f");
+    IAmRoot.style.setProperty("--accentLight", "#d0e8f2");
+    IAmRoot.style.setProperty("--accentMedium", "#79a3b1");
+    IAmRoot.style.setProperty("--accentDark", "#456268");
+  }
 };
 
 export default App;
