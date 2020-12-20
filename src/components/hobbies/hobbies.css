@@ -1,6 +1,9 @@
 .hobbiesWrapper {
+  /* Colors  */
+  color: var(--textColor);
+  background-color: var(--background);
+
   height: auto;
-  background-color: var(--darkBlue);
   overflow: auto;
 }
 
@@ -11,10 +14,12 @@
 }
 
 .hobbiesWrapper .hobbiesContent {
+  border: 2px solid var(--accentMedium);
+  background-color: var(--accentLight);
+
   border-radius: 20px;
   width: 70vw;
   margin: 50px 0px;
   display: inline-block;
-  background-color: var(--blue);
   height: 90%;
 }

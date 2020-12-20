@@ -1,18 +1,23 @@
 .introWrapper {
+  /* Colors  */
+  color: var(--textColor);
+  background-color: var(--background);
+
   padding-top: 10vw;
   width: 100vw;
   height: auto;
-  background-color: var(--darkBlue);
   text-align: center;
   overflow: auto;
 }
 
 .introWrapper .introContent {
+  border: 2px solid var(--accentMedium);
+  background-color: var(--accentLight);
+
   border-radius: 20px;
   width: 70vw;
   margin: 50px 0px;
   display: inline-block;
-  background-color: var(--blue);
   height: 90%;
 }
 

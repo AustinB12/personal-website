@@ -1,7 +1,23 @@
 .skillsWrapper {
+  /* Colors  */
+  color: var(--textColor);
+  background-color: var(--background);
+
+  /* Dimensions */
   height: auto;
-  background-color: var(--darkBlue);
   overflow: auto;
+}
+
+.skillsWrapper .skillsContent {
+  border: 2px solid var(--accentMedium);
+  background-color: var(--accentLight);
+
+  border-radius: 20px;
+  width: 70vw;
+  margin: 50px 0px;
+  border-radius: 20px;
+  display: inline-block;
+  height: 90%;
 }
 
 .skillsWrapper .skillsContent h3 {
@@ -12,13 +28,4 @@
 
 .skillsWrapper .skillsContent ul {
   text-align: left;
-}
-
-.skillsWrapper .skillsContent {
-  width: 70vw;
-  margin: 50px 0px;
-  border-radius: 20px;
-  display: inline-block;
-  background-color: var(--darkestBlue);
-  height: 90%;
 }
