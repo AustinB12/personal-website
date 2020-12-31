@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import { ReactComponent as Bg } from "../../assets/Burger.svg";
 
@@ -8,6 +9,11 @@ const Header = (props) => {
   function handleClick() {
     props.toggleDark(!props.amDark);
   }
+
+  const variants = {
+    on: { y: 0 },
+    off: { y: 175 },
+  };
 
   return (
     <div className={"headerWrapper"}>
@@ -19,6 +25,7 @@ const Header = (props) => {
       </div>
       <div className="Desktop">
         <svg
+          id="initialsSVG"
           width="495"
           height="370"
           viewBox="0 0 495 370"
@@ -46,18 +53,42 @@ const Header = (props) => {
           />
         </svg>
 
-        <div className={"theme-container"}>
-          <input type="checkbox" id="checkbox" onClick={() => handleClick()} />
-          {!props.amDark ? (
-            <span role="img" aria-label="sun with happy face">
-              🌞
-            </span>
-          ) : (
-            <span role="img" aria-label="moon with happy face">
-              🌚
-            </span>
-          )}
-        </div>
+        <svg
+          id="switch"
+          width="128"
+          height="256"
+          viewBox="0 0 128 256"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Switch" onClick={() => handleClick()}>
+            <rect
+              id="Rectangle 1"
+              width="128"
+              height="256"
+              rx="12"
+              fill="#E9E8E0"
+            />
+            <rect
+              id="Rectangle 2"
+              x="58"
+              y="26"
+              width="12"
+              height="204"
+              rx="3"
+              fill="#575757"
+            />
+            <motion.path
+              animate={props.amDark ? "off" : "on"}
+              variants={variants}
+              id="Vector 1"
+              d="M35 40H93"
+              stroke="black"
+              strokeWidth="15"
+              strokeLinecap="round"
+            />
+          </g>
+        </svg>
         <ul className={"link-holder"}>
           <li className={"header-item"}>
             <a href="#Me">About Me</a>
