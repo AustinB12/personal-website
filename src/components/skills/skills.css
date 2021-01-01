@@ -26,6 +26,18 @@
   margin: 0;
 }
 
-.skillsWrapper .skillsContent ul {
-  text-align: left;
+.icon-holder {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 20px;
+}
+
+.icon-holder svg {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.icon-holder svg > * {
+  fill: grey;
 }
