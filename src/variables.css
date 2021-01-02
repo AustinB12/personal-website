@@ -1,14 +1,14 @@
 :root {
   --background: #fcf8ec;
   --textColor: #0f0f0f;
-  --accentLight: #e0eaee;
+  --accentLight: #dfdfdf;
   --accentMedium: #ededed;
   --accentDark: #456268;
 
   /* Light Theme:  */
   --light-bg: #fcf8ec;
   --light-text: #0f0f0f;
-  --light-accentLight: #e0eaee;
+  --light-accentLight: #dfdfdf;
   --light-accentMedium: #ededed;
   --light-accentDark: #456268;
 

@@ -6,17 +6,17 @@
   /* Dimensions */
   height: auto;
   overflow: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .skillsWrapper .skillsContent {
-  border: 2px solid var(--accentMedium);
   background-color: var(--accentLight);
 
-  border-radius: 20px;
-  width: 70vw;
+  width: 80vw;
   margin: 50px 0px;
-  border-radius: 20px;
-  display: inline-block;
   height: 90%;
 }
 
@@ -27,9 +27,8 @@
 }
 
 .icon-holder {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -38,6 +37,26 @@
   min-height: 50px;
 }
 
-.icon-holder svg > * {
-  fill: grey;
+/* .icon-holder svg > * {
+  fill: var(--accentDark);
+} */
+
+.skill-category {
+  display: flex;
+  flex-direction: row;
+}
+
+.aSkill {
+  margin-right: 10px;
+}
+
+span {
+  text-align: left;
+}
+
+.label-holder {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 30%;
 }

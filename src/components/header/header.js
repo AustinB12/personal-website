@@ -97,13 +97,10 @@ const Header = (props) => {
             <a href="#Skills">Skills</a>
           </li>
           <li className={"header-item"}>
-            <a href="#Animations">Animations</a>
-          </li>
-          <li className={"header-item"}>
             <a href="#Projects">Projects</a>
           </li>
           <li className={"header-item"}>
-            <a href="#Hobbies">Hobbies</a>
+            <a href="#Resume">Resume</a>
           </li>
         </ul>
       </div>

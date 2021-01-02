@@ -3,14 +3,12 @@ import React, { useState } from "react";
 import Header from "./components/header/header";
 import Intro from "./components/intro/intro";
 import Skills from "./components/skills/skills";
-import Animations from "./components/animations/animations";
 import Projects from "./components/projects/projects";
-import Hobbies from "./components/hobbies/hobbies";
 import "./variables.css";
 import "./App.css";
 
 const App = () => {
-  const [isDark, setDark] = useState(false);
+  const [isDark, setDark] = useState(true);
 
   //? Will change the css properties if needed
   setTheme(isDark);
@@ -21,9 +19,7 @@ const App = () => {
       <div className={"App-Body"}>
         <Intro />
         <Skills />
-        <Animations />
         <Projects />
-        <Hobbies />
       </div>
     </div>
   );
@@ -41,7 +37,7 @@ const setTheme = (isDark) => {
   } else {
     IAmRoot.style.setProperty("--background", "#fcf8ec");
     IAmRoot.style.setProperty("--textColor", "#0f0f0f");
-    IAmRoot.style.setProperty("--accentLight", "#e0eaee");
+    IAmRoot.style.setProperty("--accentLight", "#dfdfdf");
     IAmRoot.style.setProperty("--accentMedium", "#ededed");
     IAmRoot.style.setProperty("--accentDark", "#456268");
   }

@@ -33,20 +33,22 @@
 }
 
 .header-item {
-  flex: 1;
+  justify-content: flex-end;
   text-decoration: none;
   max-width: 150px;
+  width: 100px;
 }
 
 a {
   text-decoration: none;
   color: var(--textColor);
-  font-size: calc(10px + 1vw);
+  font-size: calc(8px + 0.75vw);
 }
 
 a:hover {
   text-decoration: none;
   color: var(--textColor);
+  border-bottom: 2px solid grey;
 }
 a:active {
   text-decoration: none;
@@ -77,10 +79,6 @@ a:visited {
   height: 90%;
   flex: 1;
   padding: 10px;
-}
-
-span {
-  font-size: calc(20px + 1.5vw);
 }
 
 @media (max-width: 549px) {
