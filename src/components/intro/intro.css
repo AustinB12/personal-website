@@ -8,16 +8,17 @@
   height: auto;
   text-align: center;
   overflow: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .introWrapper .introContent {
-  border: 2px solid var(--accentMedium);
   background-color: var(--accentLight);
 
-  border-radius: 20px;
-  width: 70vw;
+  width: 80vw;
   margin: 50px 0px;
-  display: inline-block;
   height: 90%;
 }
 
