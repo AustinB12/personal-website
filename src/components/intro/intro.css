@@ -1,7 +1,7 @@
 .introWrapper {
   /* Colors  */
   color: var(--textColor);
-  background-color: var(--background);
+  /* background-color: var(--background); */
 
   padding-top: 10vw;
   width: 100vw;

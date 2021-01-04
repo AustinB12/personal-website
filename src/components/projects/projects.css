@@ -1,7 +1,7 @@
 .projectsWrapper {
   /* Colors  */
   color: var(--textColor);
-  background-color: var(--background);
+  /* background-color: var(--background); */
 
   height: auto;
   overflow: auto;
