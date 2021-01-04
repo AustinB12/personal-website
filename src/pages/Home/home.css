@@ -1,0 +1,6 @@
+.Home-Container {
+  background-color: var(--dark-bg);
+
+  display: flex;
+  flex-direction: column;
+}

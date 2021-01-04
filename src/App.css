@@ -4,10 +4,3 @@
   font-family: Arial, Helvetica, sans-serif;
   color: var(--textColor);
 }
-
-.App-Body {
-  background-color: var(--background);
-
-  display: flex;
-  flex-direction: column;
-}
