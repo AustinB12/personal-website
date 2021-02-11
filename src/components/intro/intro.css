@@ -1,9 +1,4 @@
 .introWrapper {
-  /* Colors  */
-  color: var(--textColor);
-  background-color: var(--background);
-
-  padding-top: 10vw;
   width: 100vw;
   height: auto;
   text-align: center;
@@ -11,12 +6,10 @@
 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .introWrapper .introContent {
-  background-color: var(--accentLight);
-
   width: 80vw;
   margin: 50px 0px;
   height: 90%;

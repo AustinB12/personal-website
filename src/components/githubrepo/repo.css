@@ -1,0 +1,36 @@
+.repo-wrapper article {
+  display: flex;
+}
+
+.repo-wrapper article main {
+  flex: 8;
+
+  padding-left: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.repo-wrapper article main h4 {
+  font-size: large;
+  margin: 0;
+}
+
+.repo-wrapper article main p {
+  font-size: small;
+}
+
+.repo-wrapper article aside {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repo-wrapper svg {
+  width: 75%;
+  height: 75%;
+}

@@ -1,13 +1,7 @@
 .App {
   text-align: center;
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--textColor);
-}
-
-.App-Body {
-  background-color: var(--background);
-
-  display: flex;
-  flex-direction: column;
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--dark-bg);
+  color: var(--dark-textColor);
 }
