@@ -6,9 +6,23 @@ import "./blog.css";
 
 const Blog = () => {
   return (
-    <div className={"Blog-Container"}>
+    <div className={"blog-wrapper"}>
       <Header />
-      <span>I'm the blog!!!!</span>
+      <p>I'm the blog!!!!</p>
+      <p>I'm still under construction :)</p>
+      <p>some topics to come:</p>
+      <ul>
+        <li>
+          Python
+          <ul>
+            <li>Lists & List Methods</li>
+            <li>Strings & String Methods</li>
+          </ul>
+        </li>
+        <li>C#</li>
+        <li>JS</li>
+        <li>React</li>
+      </ul>
     </div>
   );
 };

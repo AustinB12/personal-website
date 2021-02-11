@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--textColor);
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--dark-bg);
+  color: var(--dark-textColor);
 }

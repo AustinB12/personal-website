@@ -28,6 +28,14 @@ const Skills = () => {
                 </g>
               </svg>
             </motion.div>
+            <motion.div>
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#C4473A"
+                  d="M52.864 64h23.28l-12.375-25.877zM63.81 1.026l-59.257 20.854 9.363 77.637 49.957 27.457 50.214-27.828 9.36-77.635-59.637-20.485zm-15.766 73.974l-7.265 18.176-13.581.056 36.608-81.079-.07-.153h-.064l.001-.133.063.133h.14100000000000001l.123-.274v.274h-.124l-.069.153 38.189 81.417-13.074-.287-8.042-18.58-17.173.082"
+                ></path>
+              </svg>
+            </motion.div>
             <motion.div
               className={"aSkill"}
               whileHover={{
@@ -499,7 +507,7 @@ const Skills = () => {
               whileTap={{ scale: 0.95 }}
             >
               <svg viewBox="0 0 128 128">
-                <g fill="#181616">
+                <g fill="#dfdfdf">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -521,6 +529,7 @@ const Skills = () => {
                 <path
                   id="original-wordmark"
                   className="cls-1"
+                  fill="#dfdfdf"
                   d="M2,38.5H126V82.21H64V89.5H36.44V82.21H2ZM8.89,74.93H22.67V53.07h6.89V74.93h6.89V45.79H8.89ZM43.33,45.79V82.21H57.11V74.93H70.89V45.79Zm13.78,7.29H64V67.64H57.11Zm20.67-7.29V74.93H91.56V53.07h6.89V74.93h6.89V53.07h6.89V74.93h6.89V45.79Z"
                 ></path>
               </svg>

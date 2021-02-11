@@ -3,9 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "./fonts/Oxygen-Regular.ttf";
-import "./fonts/Oxygen-Bold.ttf";
-import "./fonts/Oxygen-Light.ttf";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
