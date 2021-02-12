@@ -10,13 +10,12 @@
 
 .skillsWrapper .skillsContent {
   width: 80vw;
-  margin: 50px 0px;
+  margin: calc(10px + 1vw) 0px;
   height: 90%;
 }
 
 .skillsWrapper .skillsContent h3 {
   font-size: calc(15px + 3vw);
-  padding-top: 20px;
   margin: 0;
 }
 
@@ -27,8 +26,8 @@
 }
 
 .icon-holder svg {
-  min-width: 50px;
-  min-height: 50px;
+  min-width: calc(10px + 2vw);
+  min-height: calc(10px + 2vw);
 }
 
 /* .icon-holder svg > * {
@@ -38,10 +37,11 @@
 .skill-category {
   display: flex;
   flex-direction: row;
+  padding-bottom: 10px;
 }
 
 .aSkill {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 span {
@@ -53,4 +53,8 @@ span {
   justify-content: left;
   align-items: center;
   width: 30%;
+}
+
+.label-holder span {
+  font-size: calc(5px + 2vw);
 }

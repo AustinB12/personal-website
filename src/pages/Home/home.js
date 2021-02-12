@@ -4,6 +4,7 @@ import Header from "../../components/header/header";
 import Intro from "../../components/intro/intro";
 import Skills from "../../components/skills/skills";
 import Projects from "../../components/projects/projects";
+import Footer from "../../components/footer/footer";
 
 import "./home.css";
 
@@ -16,6 +17,7 @@ const Home = () => {
         <Skills />
         <Projects />
       </div>
+      <Footer />
     </div>
   );
 };
