@@ -8,7 +8,7 @@ const Repo = (props) => {
       <article>
         <aside>
           <svg viewBox="0 0 128 128">
-            <g fill="#dfdfdf">
+            <g fill="#f0f0f0">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -19,7 +19,9 @@ const Repo = (props) => {
           </svg>
         </aside>
         <main>
-          <h4>{props.title}</h4>
+          <h4>
+            <strong>{props.title}</strong>
+          </h4>
           <p>{props.desc}</p>
           <p>
             <a href={props.link}>View in GitHub</a>

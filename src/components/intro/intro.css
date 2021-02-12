@@ -1,5 +1,5 @@
 .introWrapper {
-  width: 100vw;
+  width: 100%;
   height: auto;
   text-align: center;
   overflow: auto;
@@ -11,7 +11,7 @@
 
 .introWrapper .introContent {
   width: 80vw;
-  margin: 50px 0px;
+  margin: calc(10px + 1vw) 0px;
   height: 90%;
 }
 

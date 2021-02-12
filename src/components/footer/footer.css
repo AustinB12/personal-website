@@ -1,0 +1,38 @@
+.footer-wrapper {
+  height: max-content;
+
+  display: flex;
+}
+
+.footer-wrapper div {
+  height: 50px;
+  padding: 10px;
+}
+
+.footer-wrapper .socials {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper .socials svg {
+  width: 30px;
+  height: 30px;
+  margin: 0px 5px;
+}
+
+.footer-wrapper .backToTop {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: calc(3px + 2vw);
+}
+
+.footer-wrapper .backToTop:hover {
+  cursor: pointer;
+}
