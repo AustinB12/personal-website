@@ -1,4 +1,5 @@
 import Header from "../../components/header/header";
+import { ReactComponent as Noodle } from "../../assets/Noodle.svg";
 
 import "./me.css";
 
@@ -16,6 +17,8 @@ const Me = () => {
             My Profile
           </a>
         </p>
+        <p>One of my SVG designs:</p>
+        <Noodle />
       </article>
     </div>
   );

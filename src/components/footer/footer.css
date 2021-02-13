@@ -18,8 +18,8 @@
 }
 
 .footer-wrapper .socials svg {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin: 0px 5px;
 }
 
@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
 
-  font-size: calc(3px + 2vw);
+  font-size: calc(2px + 1vw);
 }
 
 .footer-wrapper .backToTop:hover {

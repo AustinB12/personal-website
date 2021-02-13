@@ -6,15 +6,6 @@
   justify-content: flex-end;
 }
 
-.Desktop {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .link-holder {
   list-style: none;
   padding: 0;
