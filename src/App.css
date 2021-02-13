@@ -5,3 +5,23 @@
   background-color: var(--dark-bg);
   color: var(--dark-textColor);
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--dark-textColor);
+  border-bottom: 2px solid grey;
+}
+
+a:active {
+  text-decoration: none;
+  color: var(--dark-textColor);
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--dark-textColor);
+}

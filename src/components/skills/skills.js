@@ -167,7 +167,7 @@ const Skills = () => {
           </div>
           <div className={"skill-category programmingLangs"}>
             <div className={"label-holder"}>
-              <span>Programming Languages</span>
+              <span>Languages</span>
             </div>
             <motion.div
               className={"aSkill"}

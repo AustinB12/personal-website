@@ -13,6 +13,8 @@
   width: 80vw;
   margin: calc(10px + 1vw) 0px;
   height: 90%;
+
+  display: flex;
 }
 
 .introContent h3 {
@@ -25,4 +27,15 @@
   font-size: calc(10px + 1vw);
   margin: 10px 40px;
   overflow: auto;
+}
+
+.introWrapper .introContent svg {
+  width: calc(100px + 5vw);
+  height: calc(100px + 5vw);
+}
+
+.introWrapper .introContent aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
