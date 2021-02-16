@@ -8,10 +8,13 @@ import Footer from "../../components/footer/footer";
 
 import "./home.css";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="Home-Container">
-      <Header />
+      <Header
+        currentTheme={props.currentTheme}
+        changeTheme={props.changeTheme}
+      />
       <div className={"Home-Content"}>
         <Intro />
         <Skills />

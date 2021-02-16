@@ -4,10 +4,13 @@ import { ReactComponent as Noodle } from "../../assets/Noodle.svg";
 import "./me.css";
 
 import React from "react";
-const Me = () => {
+const Me = (props) => {
   return (
     <div className={"me-wrapper"}>
-      <Header></Header>
+      <Header
+        currentTheme={props.currentTheme}
+        changeTheme={props.changeTheme}
+      />
       <h1>Contact Me!</h1>
       <article>
         <p>Email: austinzbaird@gmail.com</p>
@@ -18,7 +21,9 @@ const Me = () => {
           </a>
         </p>
         <p>One of my SVG designs:</p>
-        <Noodle />
+        <div className={"svgHolder"}>
+          <Noodle />
+        </div>
       </article>
     </div>
   );

@@ -1,9 +1,9 @@
-.App {
+#App {
   text-align: center;
   display: block;
   font-family: "Roboto Mono", monospace;
-  background-color: var(--dark-bg);
-  color: var(--dark-textColor);
+  background-color: var(--bg);
+  color: var(--txt);
 }
 
 a {
@@ -12,16 +12,46 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: var(--dark-textColor);
+  color: var(--txt);
   border-bottom: 2px solid grey;
 }
 
 a:active {
   text-decoration: none;
-  color: var(--dark-textColor);
+  color: var(--txt);
 }
 
 a:visited {
   text-decoration: none;
-  color: var(--dark-textColor);
+  color: var(--txt);
+}
+
+.light-theme {
+  --bg: #fcf8ec;
+  --txt: #0f0f0f;
+  --accent: #ededed;
+}
+
+.dark-theme {
+  --bg: #0d1117;
+  --txt: #eff8ff;
+  --accent: #424a55;
+}
+
+.red-theme {
+  --bg: #e7a298;
+  --txt: #0f0f0f;
+  --accent: #bd4444;
+}
+
+.blue-theme {
+  --bg: #849fe9;
+  --txt: #0f0f0f;
+  --accent: #344ac9;
+}
+
+.green-theme {
+  --bg: #7ae076;
+  --txt: #0f0f0f;
+  --accent: #29a73a;
 }
