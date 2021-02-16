@@ -1,8 +1,8 @@
-.me-wrapper svg {
+.me-wrapper {
   min-height: 100vh;
 }
 
-.me-wrapper svg {
+.me-wrapper .svgHolder svg {
   height: 50vh;
   width: 50vw;
 }

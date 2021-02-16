@@ -22,7 +22,7 @@ const Footer = () => {
             width="884.95px"
             height="1000px"
             viewBox="0 0 884.95 1000"
-            enable-background="new 0 0 884.95 1000"
+            enableBackground="new 0 0 884.95 1000"
           >
             <g>
               <path

@@ -7,10 +7,13 @@ import { ReactComponent as Linda } from "../../assets/LindaFront.svg";
 
 import "./blog.css";
 
-const Blog = () => {
+const Blog = (props) => {
   return (
     <div className={"blog-wrapper"}>
-      <Header />
+      <Header
+        currentTheme={props.currentTheme}
+        changeTheme={props.changeTheme}
+      />
       <h1>Welcome to my Blog!</h1>
       <p>I'm still under construction :)</p>
       <p>some topics to come:</p>
@@ -20,8 +23,10 @@ const Blog = () => {
       <p>C# / Interfaces / Dependency Injection</p>
       <p>JS Basics</p>
       <p>React Fundamentals</p>
-      <Bob />
-      <Linda />
+      <div className={"svgHolder"}>
+        <Bob />
+        <Linda />
+      </div>
       <Footer />
     </div>
   );

@@ -3,7 +3,7 @@
   height: 50px;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .link-holder {
@@ -35,16 +35,31 @@
 
 .link-holder a:hover {
   text-decoration: none;
-  color: var(--dark-textColor);
+  color: var(--txt);
   border-bottom: 2px solid grey;
 }
 
 .link-holder a:active {
   text-decoration: none;
-  color: var(--dark-textColor);
+  color: var(--txt);
 }
 
 .link-holder a:visited {
   text-decoration: none;
-  color: var(--dark-textColor);
+  color: var(--txt);
+}
+
+.headerWrapper .theme-wrapper {
+  padding-left: 20px;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerWrapper .theme-wrapper .theme-select {
+  width: 200px;
+  color: var(--dark-accentDark);
+  padding-left: 15px;
 }
