@@ -20,9 +20,13 @@ const Me = (props) => {
             My Profile
           </a>
         </p>
-        <p>One of my SVG designs:</p>
         <div className={"svgHolder"}>
-          <Noodle />
+          <figure>
+            <Noodle />
+            <figcaption>
+              SVG I made of "Noodle" from the band Gorillaz
+            </figcaption>
+          </figure>
         </div>
       </article>
     </div>

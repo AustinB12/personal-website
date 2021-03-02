@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div className={"socials"}>
         I make coding tik toks!
-        <a href="https://www.tiktok.com/@codingtuts">
+        <a href="https://www.tiktok.com/@foraloop">
           <svg
             id="Layer_1"
             x="0px"

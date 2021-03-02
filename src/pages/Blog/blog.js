@@ -24,8 +24,14 @@ const Blog = (props) => {
       <p>JS Basics</p>
       <p>React Fundamentals</p>
       <div className={"svgHolder"}>
-        <Bob />
-        <Linda />
+        <figure>
+          <Bob />
+          <Linda />
+          <figcaption>
+            These are some SVG's I made, inspired from one of my favorite TV
+            shows!
+          </figcaption>
+        </figure>
       </div>
       <Footer />
     </div>

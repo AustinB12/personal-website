@@ -11,7 +11,7 @@
   padding: 0;
   margin: 0;
   height: 100%;
-  padding-right: 20px;
+  padding-right: 2vw;
 
   display: flex;
   align-content: center;
@@ -50,16 +50,19 @@
 }
 
 .headerWrapper .theme-wrapper {
-  padding-left: 20px;
+  padding-left: 1vw;
 
   display: flex;
-  align-content: center;
-  justify-content: center;
   align-items: center;
 }
 
+.headerWrapper .theme-wrapper span {
+  font-size: calc(8px + 0.75vw);
+}
+
 .headerWrapper .theme-wrapper .theme-select {
-  width: 200px;
+  width: calc(100px + 3vw);
   color: var(--dark-accentDark);
-  padding-left: 15px;
+  padding-left: 1vw;
+  font-size: calc(8px + 0.75vw);
 }
