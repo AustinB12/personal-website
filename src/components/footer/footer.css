@@ -6,7 +6,7 @@
 
 .footer-wrapper div {
   height: 50px;
-  padding: 10px;
+  padding: 1vh 1vw;
 }
 
 .footer-wrapper .socials {
@@ -15,12 +15,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: calc(2px + 1vw);
 }
 
 .footer-wrapper .socials svg {
-  width: 20px;
-  height: 20px;
   margin: 0px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-wrapper .socials svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .footer-wrapper .socials svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .footer-wrapper .backToTop {

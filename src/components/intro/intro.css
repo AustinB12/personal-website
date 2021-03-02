@@ -9,8 +9,19 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .introWrapper .introContent {
+    width: 95vw;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .introWrapper .introContent {
+    width: 80vw;
+  }
+}
+
 .introWrapper .introContent {
-  width: 80vw;
   margin: calc(10px + 1vw) 0px;
   height: 90%;
 
@@ -25,13 +36,13 @@
 
 .introContent p {
   font-size: calc(10px + 1vw);
-  margin: 10px 40px;
+  margin: 2vh 2vw;
   overflow: auto;
 }
 
 .introWrapper .introContent svg {
-  width: calc(100px + 5vw);
-  height: calc(100px + 5vw);
+  width: calc(50px + 10vw);
+  height: calc(50px + 10vw);
 }
 
 .introWrapper .introContent aside {

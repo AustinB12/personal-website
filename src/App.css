@@ -8,12 +8,12 @@
 
 a {
   text-decoration: none;
+  color: var(--txt);
 }
 
 a:hover {
   text-decoration: none;
   color: var(--txt);
-  border-bottom: 2px solid grey;
 }
 
 a:active {
