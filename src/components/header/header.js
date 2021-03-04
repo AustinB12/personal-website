@@ -1,21 +1,23 @@
-import React from "react";
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import SideNav from "./sideNav/sideNav";
+import SideTheme from "./sideTheme/sideTheme";
 import Select from "react-select";
-// import { motion } from "framer-motion";
 
-// import { ReactComponent as Bg } from "../../assets/Burger.svg";
+import { ReactComponent as Burger } from "../../assets/Burger.svg";
+import { ReactComponent as Color } from "../../assets/ColorWheel.svg";
 
 import "./header.css";
 
 const Header = (props) => {
-  // const [isSelected, setSelected] = useState("dark-theme");
+  const [isNavOpen, setNavOpen] = useState(false);
+  const [isThemeOpen, setThemeOpen] = useState(false);
 
   const options = [
     { value: "dark-theme", label: "Midnight" },
-    { value: "light-theme", label: "High Light" },
-    { value: "red-theme", label: "Tangerine Dream" },
-    { value: "blue-theme", label: "Wrightsville" },
+    { value: "light-theme", label: "Light" },
+    { value: "red-theme", label: "Warm" },
+    { value: "blue-theme", label: "Ocean" },
     { value: "green-theme", label: "Garden" },
   ];
 
@@ -38,32 +40,48 @@ const Header = (props) => {
 
   return (
     <div className={"headerWrapper"}>
-      <div className={"theme-wrapper"}>
-        <span>Theme Selector</span>
-        <Select
-          className="theme-select"
-          name={"themes"}
-          id={"themeSelect"}
-          onChange={(e) => props.changeTheme(e.value)}
-          options={options}
-          placeholder="Select a Theme..."
-          value={{
-            value: props.currentTheme,
-            label: getLabel(props.currentTheme),
-          }}
-        ></Select>
-      </div>
-      <ul className={"link-holder"}>
-        <Link to="/">
-          <li className={"header-item"}>Home</li>
-        </Link>
-        <Link to="/blog">
-          <li className={"header-item"}>Blog</li>
-        </Link>
-        <Link to="/me">
-          <li className={"header-item"}>Contact Me</li>
-        </Link>
-      </ul>
+      <nav className={"wide"}>
+        <div className={"theme-wrapper"}>
+          <span>Theme Selector</span>
+          <Select
+            className="theme-select"
+            name={"themes"}
+            id={"themeSelect"}
+            onChange={(e) => props.changeTheme(e.value)}
+            options={options}
+            placeholder="Select a Theme..."
+            value={{
+              value: props.currentTheme,
+              label: getLabel(props.currentTheme),
+            }}
+          ></Select>
+        </div>
+        <ul className={"link-holder"}>
+          <Link to="/">
+            <li className={"header-item"}>Home</li>
+          </Link>
+          <Link to="/blog">
+            <li className={"header-item"}>Blog</li>
+          </Link>
+          <Link to="/me">
+            <li className={"header-item"}>Contact Me</li>
+          </Link>
+        </ul>
+      </nav>
+      <nav className={"narrow"}>
+        <div role="button" onClick={() => setThemeOpen(true)}>
+          <Color id="colorWheel" />
+        </div>
+        <SideTheme
+          changeTheme={props.changeTheme}
+          isOpen={isThemeOpen}
+          setTheme={setThemeOpen}
+        />
+        <div role="button" onClick={() => setNavOpen(true)}>
+          <Burger id="burger" />
+        </div>
+        <SideNav isOpen={isNavOpen} setNav={setNavOpen} />
+      </nav>
     </div>
   );
 };
