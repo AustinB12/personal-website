@@ -1,0 +1,61 @@
+.sideNav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vw;
+  background: var(--txt);
+  color: var(--bg);
+  padding-left: 20px;
+  padding-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sideNav-wrapper button {
+  width: 50%;
+}
+
+.sideNav-wrapper .link-holder {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  padding-right: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sideNav-wrapper .header-item {
+  text-decoration: none;
+}
+
+.sideNav-wrapper .link-holder a {
+  text-decoration: none;
+  font-size: calc(18px + 1vw);
+  border-bottom: 2px solid transparent;
+  padding: 0 10px;
+
+  display: flex;
+  align-content: center;
+}
+
+.sideNav-wrapper .link-holder a:hover {
+  text-decoration: none;
+  color: var(--bg);
+  border-bottom: 2px solid grey;
+}
+
+.sideNav-wrapper .link-holder a:active {
+  text-decoration: none;
+  color: var(--bg);
+}
+
+.sideNav-wrapper .link-holder a:visited {
+  text-decoration: none;
+  color: var(--bg);
+}

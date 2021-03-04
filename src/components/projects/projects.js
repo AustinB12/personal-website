@@ -10,7 +10,9 @@ const Projects = () => {
         <h3>Projects</h3>
         <Repo
           title={"personal-website"}
-          desc={"My portfolio site!"}
+          desc={
+            "My portfolio site! (The one you're looking at now) You can go see how I made this beautiful thing!"
+          }
           link={"https://github.com/AustinB12/personal-website"}
         ></Repo>
         <Repo

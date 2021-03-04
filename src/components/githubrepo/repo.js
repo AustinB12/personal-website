@@ -24,7 +24,9 @@ const Repo = (props) => {
           </h4>
           <p>{props.desc}</p>
           <p>
-            <a href={props.link}>View in GitHub</a>
+            <a href={props.link}>
+              {"<"}View in GitHub{">"}
+            </a>
           </p>
         </main>
       </article>
