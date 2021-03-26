@@ -30,10 +30,6 @@
   min-height: calc(10px + 2vw);
 }
 
-/* .icon-holder svg > * {
-  fill: var(--accentDark);
-} */
-
 .skill-category {
   display: flex;
   flex-direction: row;
@@ -42,6 +38,11 @@
 
 .aSkill {
   margin-left: 10px;
+}
+
+/*? Fills in the SVGs with a theme color */
+.aSkill svg > * {
+  fill: var(--accentDark);
 }
 
 span {

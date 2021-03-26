@@ -74,9 +74,10 @@
 }
 
 .headerWrapper .theme-wrapper .theme-select {
-  width: calc(100px + 4vw);
+  width: auto;
+  padding-left: 6px;
+  margin-left: 10px;
   color: var(--dark-accentDark);
-  padding-left: 1vw;
   font-size: calc(8px + 0.5vw);
 }
 
