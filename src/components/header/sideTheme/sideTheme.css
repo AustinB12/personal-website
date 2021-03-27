@@ -1,0 +1,65 @@
+.sideNav-wrapper .stuff-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideNav-wrapper .stuff-container span {
+  height: 20vh;
+}
+.sideNav-wrapper .stuff-container span button {
+  height: 100%;
+  width: 100%;
+}
+
+.sideNav-wrapper .stuff-container .color-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.sideNav-wrapper .stuff-container .color-container > * {
+  width: calc(50% - 40px);
+  height: 150px;
+
+  margin: 10px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideNav-wrapper .stuff-container .color-container > * span {
+  width: auto;
+  height: auto;
+  font-size: 3em;
+}
+
+#dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-txt);
+  border: 8px solid var(--dark-accent);
+}
+#light {
+  background-color: var(--light-bg);
+  color: var(--light-txt);
+  border: 8px solid var(--light-accent);
+}
+#red {
+  background-color: var(--red-bg);
+  color: var(--red-txt);
+  border: 8px solid var(--red-accent);
+}
+#blue {
+  background-color: var(--blue-bg);
+  color: var(--blue-txt);
+  border: 8px solid var(--blue-accent);
+}
+
+#green {
+  background-color: var(--green-bg);
+  color: var(--green-txt);
+  border: 8px solid var(--green-accent);
+}

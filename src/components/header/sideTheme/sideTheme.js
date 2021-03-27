@@ -1,6 +1,5 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Select from "react-select";
 
 import "./sideTheme.css";
 
@@ -10,31 +9,6 @@ const SideTheme = (props) => {
       x: "0%",
     },
     closed: { x: "-100%" },
-  };
-
-  const options = [
-    { value: "dark-theme", label: "Midnight" },
-    { value: "light-theme", label: "Light" },
-    { value: "red-theme", label: "Warm" },
-    { value: "blue-theme", label: "Ocean" },
-    { value: "green-theme", label: "Garden" },
-  ];
-
-  const getLabel = (value) => {
-    switch (value) {
-      case "dark-theme":
-        return options[0].label;
-      case "light-theme":
-        return options[1].label;
-      case "red-theme":
-        return options[2].label;
-      case "blue-theme":
-        return options[3].label;
-      case "green-theme":
-        return options[4].label;
-      default:
-        return options[0].label;
-    }
   };
 
   return (
@@ -48,19 +22,75 @@ const SideTheme = (props) => {
           exit="closed"
           transition={{ damping: 5 }}
         >
-          <Select
-            className="theme-select"
-            name={"themes"}
-            id={"themeSelect"}
-            onChange={(e) => props.changeTheme(e.value)}
-            options={options}
-            placeholder="Select a Theme..."
-            value={{
-              value: props.currentTheme,
-              label: getLabel(props.currentTheme),
-            }}
-          ></Select>
-          <button onClick={() => props.setTheme(false)}>Close</button>
+          <div className={"stuff-container"}>
+            <div className={"color-container"}>
+              <motion.div
+                aria-checked
+                role="radio"
+                id="dark"
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.4 },
+                }}
+                onClick={() => props.changeTheme("dark-theme")}
+              >
+                <span>Dark</span>
+              </motion.div>
+              <motion.div
+                aria-checked
+                role="radio"
+                id="light"
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.4 },
+                }}
+                onClick={() => props.changeTheme("light-theme")}
+              >
+                <span>Light</span>
+              </motion.div>
+              <motion.div
+                aria-checked
+                role="radio"
+                id="red"
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.4 },
+                }}
+                onClick={() => props.changeTheme("red-theme")}
+              >
+                <span>Red</span>
+              </motion.div>
+              <motion.div
+                aria-checked
+                role="radio"
+                id="blue"
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.4 },
+                }}
+                onClick={() => props.changeTheme("blue-theme")}
+              >
+                <span>Blue</span>
+              </motion.div>
+              <motion.div
+                aria-checked
+                role="radio"
+                id="green"
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.4 },
+                }}
+                onClick={() => props.changeTheme("green-theme")}
+              >
+                <span>Green</span>
+              </motion.div>
+            </div>
+            <span>
+              <button onClick={() => props.changeTheme("dark-theme")}>
+                Close
+              </button>
+            </span>
+          </div>
         </motion.nav>
       )}
     </AnimatePresence>

@@ -19,8 +19,16 @@
   font-size: calc(2px + 1vw);
 }
 
-.footer-wrapper .socials svg {
-  margin: 0px 5px;
+.footer-wrapper .socials span {
+  margin-right: 8px;
+}
+
+.footer-wrapper .socials a {
+  margin: 0px 8px;
+}
+
+.footer-wrapper .socials a svg > * {
+  fill: var(--accentDark);
 }
 
 @media only screen and (max-width: 600px) {
@@ -32,8 +40,8 @@
 
 @media only screen and (min-width: 601px) {
   .footer-wrapper .socials svg {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 }
 
