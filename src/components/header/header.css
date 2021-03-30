@@ -66,7 +66,7 @@
   padding-left: 1vw;
 
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
 }
 
 .headerWrapper .theme-wrapper svg {
@@ -97,11 +97,12 @@
 
 .headerWrapper .wide {
   display: flex;
+  justify-content: flex-end;
 }
 
 .headerWrapper .narrow {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
   padding-right: 10px;
 }
 

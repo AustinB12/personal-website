@@ -44,9 +44,3 @@
   width: calc(50px + 10vw);
   height: calc(50px + 10vw);
 }
-
-.introWrapper .introContent aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

@@ -15,7 +15,7 @@ const SideTheme = (props) => {
     <AnimatePresence>
       {props.isOpen && (
         <motion.nav
-          className={"sideNav-wrapper"}
+          className={"sideTheme-wrapper"}
           variants={variants}
           initial="closed"
           animate="open"
@@ -86,9 +86,7 @@ const SideTheme = (props) => {
               </motion.div>
             </div>
             <span>
-              <button onClick={() => props.changeTheme("dark-theme")}>
-                Close
-              </button>
+              <button onClick={() => props.setTheme(false)}>Close</button>
             </span>
           </div>
         </motion.nav>

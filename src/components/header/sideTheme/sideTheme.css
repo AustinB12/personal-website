@@ -1,24 +1,36 @@
-.sideNav-wrapper .stuff-container {
+.sideTheme-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  background: var(--txt);
+  color: var(--bg);
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.sideTheme-wrapper .stuff-container {
   display: flex;
   flex-direction: column;
 }
 
-.sideNav-wrapper .stuff-container span {
+.sideTheme-wrapper .stuff-container span {
   height: 20vh;
 }
-.sideNav-wrapper .stuff-container span button {
+.sideTheme-wrapper .stuff-container span button {
   height: 100%;
   width: 100%;
 }
 
-.sideNav-wrapper .stuff-container .color-container {
+.sideTheme-wrapper .stuff-container .color-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: auto;
 }
 
-.sideNav-wrapper .stuff-container .color-container > * {
+.sideTheme-wrapper .stuff-container .color-container > * {
   width: calc(50% - 40px);
   height: 150px;
 
@@ -31,7 +43,7 @@
   justify-content: center;
 }
 
-.sideNav-wrapper .stuff-container .color-container > * span {
+.sideTheme-wrapper .stuff-container .color-container > * span {
   width: auto;
   height: auto;
   font-size: 3em;

@@ -5,7 +5,6 @@ import SideTheme from "./sideTheme/sideTheme";
 
 import { ReactComponent as PaintBrush } from "../../assets/paintbrush.svg";
 import { ReactComponent as Burger } from "../../assets/Burger.svg";
-import { ReactComponent as Color } from "../../assets/ColorWheel.svg";
 
 import "./header.css";
 
@@ -15,17 +14,17 @@ const Header = (props) => {
 
   return (
     <div className={"headerWrapper"}>
-      <nav className={"wide"}>
-        <div className={"theme-wrapper"}>
-          <div role="button" onClick={() => setThemeOpen(true)}>
-            <PaintBrush />
-          </div>
-          <SideTheme
-            changeTheme={props.changeTheme}
-            isOpen={isThemeOpen}
-            setTheme={setThemeOpen}
-          />
+      <div className={"theme-wrapper"}>
+        <div role="button" onClick={() => setThemeOpen(true)}>
+          <PaintBrush />
         </div>
+        <SideTheme
+          changeTheme={props.changeTheme}
+          isOpen={isThemeOpen}
+          setTheme={setThemeOpen}
+        />
+      </div>
+      <nav className={"wide"}>
         <ul className={"link-holder"}>
           <Link to="/">
             <li className={"header-item"}>Home</li>
@@ -40,14 +39,6 @@ const Header = (props) => {
       </nav>
 
       <nav className={"narrow"}>
-        <div role="button" onClick={() => setThemeOpen(true)}>
-          <Color id="colorWheel" />
-        </div>
-        <SideTheme
-          changeTheme={props.changeTheme}
-          isOpen={isThemeOpen}
-          setTheme={setThemeOpen}
-        />
         <div role="button" onClick={() => setNavOpen(true)}>
           <Burger id="burger" />
         </div>
