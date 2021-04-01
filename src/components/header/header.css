@@ -76,23 +76,6 @@
   cursor: pointer;
 }
 
-.headerWrapper .theme-wrapper .theme-select {
-  width: auto;
-  padding-left: 6px;
-  margin-left: 10px;
-  color: var(--dark-accentDark);
-  font-size: calc(8px + 0.5vw);
-
-  border: 1px solid var(--select-border);
-  border-radius: 0.25em;
-  padding: 0.25em 0.5em;
-  font-size: 1.25rem;
-  cursor: pointer;
-  line-height: 1.1;
-  background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
-}
-
 /** === Theme Stuff === **/
 
 .headerWrapper .wide {
@@ -116,4 +99,8 @@
   .headerWrapper .narrow {
     display: none;
   }
+}
+
+#burger g rect {
+  fill: var(--txt);
 }

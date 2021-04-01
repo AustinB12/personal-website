@@ -29,7 +29,7 @@ const SideTheme = (props) => {
                 role="radio"
                 id="dark"
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.03,
                   transition: { duration: 0.4 },
                 }}
                 onClick={() => props.changeTheme("dark-theme")}
@@ -41,7 +41,7 @@ const SideTheme = (props) => {
                 role="radio"
                 id="light"
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.03,
                   transition: { duration: 0.4 },
                 }}
                 onClick={() => props.changeTheme("light-theme")}
@@ -53,7 +53,7 @@ const SideTheme = (props) => {
                 role="radio"
                 id="red"
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.03,
                   transition: { duration: 0.4 },
                 }}
                 onClick={() => props.changeTheme("red-theme")}
@@ -65,7 +65,7 @@ const SideTheme = (props) => {
                 role="radio"
                 id="blue"
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.03,
                   transition: { duration: 0.4 },
                 }}
                 onClick={() => props.changeTheme("blue-theme")}
@@ -77,7 +77,7 @@ const SideTheme = (props) => {
                 role="radio"
                 id="green"
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.03,
                   transition: { duration: 0.4 },
                 }}
                 onClick={() => props.changeTheme("green-theme")}
@@ -85,10 +85,12 @@ const SideTheme = (props) => {
                 <span>Green</span>
               </motion.div>
             </div>
-            <span>
-              <button onClick={() => props.setTheme(false)}>Close</button>
-            </span>
           </div>
+          <div
+            className={"outside-container"}
+            role={"button"}
+            onClick={() => props.setTheme(false)}
+          ></div>
         </motion.nav>
       )}
     </AnimatePresence>
