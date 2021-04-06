@@ -19,9 +19,7 @@ const Repo = (props) => {
           </svg>
         </aside>
         <main>
-          <h4>
-            <strong>{props.title}</strong>
-          </h4>
+          <h4>{props.title}</h4>
           <p>{props.desc}</p>
           <p>
             <a href={props.link}>

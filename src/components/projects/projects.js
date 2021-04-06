@@ -20,6 +20,11 @@ const Projects = () => {
           desc={"A python twitter bot that tweets out the nation debt."}
           link={"https://github.com/AustinB12/twitter-bot"}
         ></Repo>
+        <Repo
+          title={"Blue Karma website"}
+          desc={"A promotional React App website for an up-and-coming band."}
+          link={"https://github.com/jacobadams111/BlueKarmaOfficialWebsite"}
+        ></Repo>
       </div>
     </div>
   );

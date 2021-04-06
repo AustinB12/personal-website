@@ -2,15 +2,29 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 80vw;
-  height: 100vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sideNav-wrapper .stuff-container {
   background: var(--txt);
   color: var(--bg);
   padding-left: 20px;
   padding-top: 20px;
+  width: 80vw;
+  height: 100vw;
 
   display: flex;
   flex-direction: column;
+}
+.sideNav-wrapper .outside-container {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: transparent;
+
+  display: flex;
+  justify-content: flex-end;
 }
 
 .sideNav-wrapper button {
@@ -36,8 +50,7 @@
 
 .sideNav-wrapper .link-holder a {
   text-decoration: none;
-  font-size: calc(18px + 1vw);
-  border-bottom: 2px solid transparent;
+  font-size: calc(20px + 1.25vw);
   padding: 0 10px;
 
   display: flex;
@@ -47,7 +60,6 @@
 .sideNav-wrapper .link-holder a:hover {
   text-decoration: none;
   color: var(--bg);
-  border-bottom: 2px solid grey;
 }
 
 .sideNav-wrapper .link-holder a:active {

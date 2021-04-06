@@ -7,7 +7,7 @@ import "./sideNav.css";
 const SideNav = (props) => {
   const variants = {
     open: {
-      x: "20%",
+      x: "0%",
     },
     closed: { x: "100%" },
   };
@@ -23,18 +23,49 @@ const SideNav = (props) => {
           exit="closed"
           transition={{ damping: 5 }}
         >
-          <ul className={"link-holder"}>
-            <Link to="/">
-              <li className={"header-item"}>Home</li>
-            </Link>
-            <Link to="/blog">
-              <li className={"header-item"}>Blog</li>
-            </Link>
-            <Link to="/me">
-              <li className={"header-item"}>Contact Me</li>
-            </Link>
-          </ul>
-          <button onClick={() => props.setNav(false)}>Close</button>
+          <div
+            className={"outside-container"}
+            role="button"
+            onClick={() => props.setNav(false)}
+          >
+            <div className={"stuff-container"}>
+              <ul className={"link-holder"}>
+                <Link to="/">
+                  <motion.li
+                    whileHover={{
+                      x: "10px",
+                      transition: { duration: 0.4 },
+                    }}
+                    className={"header-item"}
+                  >
+                    Home
+                  </motion.li>
+                </Link>
+                <Link to="/blog">
+                  <motion.li
+                    whileHover={{
+                      x: "10px",
+                      transition: { duration: 0.4 },
+                    }}
+                    className={"header-item"}
+                  >
+                    Blog
+                  </motion.li>
+                </Link>
+                <Link to="/me">
+                  <motion.li
+                    whileHover={{
+                      x: "10px",
+                      transition: { duration: 0.4 },
+                    }}
+                    className={"header-item"}
+                  >
+                    Contact Me
+                  </motion.li>
+                </Link>
+              </ul>
+            </div>
+          </div>
         </motion.nav>
       )}
     </AnimatePresence>

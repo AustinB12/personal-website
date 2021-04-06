@@ -11,7 +11,15 @@ const Footer = () => {
   return (
     <div className={"footer-wrapper"}>
       <div className={"backToTop"}>
-        <span onClick={() => scrollTop()}>Click Me To Go Back To Top :)</span>
+        <span onClick={() => scrollTop()}>
+          <span role="img" aria-label="Pointing Up">
+            ☝
+          </span>{" "}
+          Click To Scroll To Top{" "}
+          <span role="img" aria-label="Pointing Up">
+            ☝
+          </span>
+        </span>
       </div>
       <div className={"socials"}>
         <span>I make coding tik toks!</span>

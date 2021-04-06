@@ -1,5 +1,4 @@
 import Header from "../../components/header/header";
-import { ReactComponent as Noodle } from "../../assets/Noodle.svg";
 
 import "./me.css";
 
@@ -20,14 +19,6 @@ const Me = (props) => {
             My Profile
           </a>
         </p>
-        <div className={"svgHolder"}>
-          <figure>
-            <Noodle />
-            <figcaption>
-              SVG I made of "Noodle" from the band Gorillaz
-            </figcaption>
-          </figure>
-        </div>
       </article>
     </div>
   );

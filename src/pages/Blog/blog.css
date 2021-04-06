@@ -1,8 +1,7 @@
 .blog-wrapper {
-  min-height: 100vh;
+  height: auto;
 }
 
-.blog-wrapper .svgHolder svg {
-  width: 175px;
-  height: 560px;
+.blog-wrapper .blog-content {
+  height: 84vh;
 }

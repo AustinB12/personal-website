@@ -11,7 +11,7 @@ const Skills = () => {
         <div className={"icon-holder"}>
           <div className={"skill-category frontEndTech"}>
             <div className={"label-holder"}>
-              <span>Front End Tech</span>
+              <span>Front End</span>
             </div>
             <motion.div
               className={"aSkill"}
@@ -114,7 +114,7 @@ const Skills = () => {
           </div>
           <div className={"skill-category backEndTech"}>
             <div className={"label-holder"}>
-              <span>Back End Tech</span>
+              <span>Back End</span>
             </div>
             <motion.div
               className={"aSkill"}

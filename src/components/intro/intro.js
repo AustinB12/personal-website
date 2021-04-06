@@ -7,10 +7,8 @@ const Intro = () => {
     <div className={"introWrapper"} id="Me">
       <div className="introContent">
         <article>
-          <h3>Hello World!</h3>
-          <p>My name is Austin Baird, and I'm a web developer!</p>
-          <p>My skills lie primarily in .NET, JS and React.</p>
-          <p>Oh, and I like designing & animating SVGs</p>
+          <h3>Hi, I'm Austin Baird</h3>
+          <p>and I'm a web developer.</p>
         </article>
       </div>
     </div>
