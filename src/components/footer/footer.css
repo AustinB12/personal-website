@@ -27,9 +27,9 @@
   margin: 0px 8px;
 }
 
-.footer-wrapper .socials a svg > * {
+/* .footer-wrapper .socials a svg > * {
   fill: var(--acc-light);
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .footer-wrapper .socials svg {

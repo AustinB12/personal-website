@@ -30,8 +30,8 @@ a:visited {
   --bg: #fcf8ec;
   --txt: #292929;
   --accent: #ededed;
-  --acc-light: #cfcfcf;
-  --acc-dark: #cfcfcf;
+  --acc-light: #6e6e6e;
+  --acc-dark: #4d4d4d;
 }
 
 .dark-theme {
@@ -43,7 +43,7 @@ a:visited {
 }
 
 .red-theme {
-  --bg: #502721;
+  --bg: #521a1a;
   --txt: #eff8ff;
   --accent: #bd4444;
   --acc-light: #e79c9c;
@@ -64,4 +64,17 @@ a:visited {
   --accent: #29a73a;
   --acc-light: #5ce973;
   --acc-dark: #185318;
+}
+
+#scroll-indicator {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+  fill: var(--acc-dark);
+}
+
+#scroll-indicator path {
+  stroke: var(--acc-light);
+  stroke-width: 2px;
 }
