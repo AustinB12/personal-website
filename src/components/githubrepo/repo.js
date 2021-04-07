@@ -8,7 +8,7 @@ const Repo = (props) => {
       <article>
         <aside>
           <svg viewBox="0 0 128 128">
-            <g fill="var(--accentDark)">
+            <g fill="var(--acc-light)">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"

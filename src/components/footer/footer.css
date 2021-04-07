@@ -28,7 +28,7 @@
 }
 
 .footer-wrapper .socials a svg > * {
-  fill: var(--accentDark);
+  fill: var(--acc-light);
 }
 
 @media only screen and (max-width: 600px) {

@@ -28,30 +28,40 @@ a:visited {
 
 .light-theme {
   --bg: #fcf8ec;
-  --txt: #0f0f0f;
+  --txt: #292929;
   --accent: #ededed;
+  --acc-light: #cfcfcf;
+  --acc-dark: #cfcfcf;
 }
 
 .dark-theme {
   --bg: #0d1117;
   --txt: #eff8ff;
-  --accent: #424a55;
+  --accent: #717177;
+  --acc-light: #dad9e4;
+  --acc-dark: #424a55;
 }
 
 .red-theme {
-  --bg: #e7a298;
-  --txt: #0f0f0f;
+  --bg: #502721;
+  --txt: #eff8ff;
   --accent: #bd4444;
+  --acc-light: #e79c9c;
+  --acc-dark: #330505;
 }
 
 .blue-theme {
-  --bg: #849fe9;
-  --txt: #0f0f0f;
+  --bg: #292457;
+  --txt: #eff8ff;
   --accent: #344ac9;
+  --acc-light: #7d8ff0;
+  --acc-dark: #15113f;
 }
 
 .green-theme {
-  --bg: #7ae076;
-  --txt: #0f0f0f;
+  --bg: #2e5a2d;
+  --txt: #eff8ff;
   --accent: #29a73a;
+  --acc-light: #5ce973;
+  --acc-dark: #185318;
 }

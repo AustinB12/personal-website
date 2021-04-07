@@ -45,7 +45,7 @@
 .headerWrapper .wide .link-holder a:hover {
   text-decoration: none;
   color: var(--txt);
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid var(--txt);
 }
 
 .headerWrapper .wide .link-holder a:active {
