@@ -4,7 +4,7 @@ import { Route, BrowserRouter as BR, Switch } from "react-router-dom";
 import Home from "./pages/Home/home";
 import Blog from "./pages/Blog/blog";
 import Me from "./pages/Contact/me";
-import { CircleIndicator } from "./components/scrollIndicator/indicator";
+import { ScrollIndicator } from "./components/scrollIndicator/indicator";
 
 import "./App.css";
 import "./variables.css";
@@ -31,7 +31,7 @@ const App = () => {
   return (
     <BR>
       <div id={"App"} className={isTheme}>
-        <CircleIndicator />
+        <ScrollIndicator />
         <Switch>
           <Route exact path="/" component={homeWithProps}></Route>
           <Route exact path="/me" component={meWithProps}></Route>

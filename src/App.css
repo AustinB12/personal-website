@@ -68,13 +68,6 @@ a:visited {
 
 #scroll-indicator {
   position: fixed;
-  bottom: 10px;
-  left: 10px;
-
-  fill: var(--acc-dark);
-}
-
-#scroll-indicator path {
-  stroke: var(--acc-light);
-  stroke-width: 2px;
+  top: -1;
+  left: 0;
 }

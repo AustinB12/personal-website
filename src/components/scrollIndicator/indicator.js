@@ -1,21 +1,27 @@
-import React from "react";
-import { motion, useViewportScroll } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { useViewportScroll } from "framer-motion";
 
-export const CircleIndicator = () => {
+export const ScrollIndicator = () => {
+  const [progress, setProgress] = useState(0);
   const { scrollYProgress } = useViewportScroll();
+
+  useEffect(() =>
+    scrollYProgress.onChange(() => setProgress(scrollYProgress.current))
+  );
 
   return (
     <svg
-      width="54"
-      height="54"
-      viewBox="0 0 54 54"
-      fill="none"
-      id="scroll-indicator"
+      id={"scroll-indicator"}
+      height="10"
+      width="100%"
+      viewBox="0 0 100 10"
+      preserveAspectRatio="none"
     >
-      <motion.path
-        d="M39.7279 39.7279C46.7574 32.6985 46.7574 21.3015 39.7279 14.2721C32.6985 7.24264 21.3015 7.24264 14.2721 14.2721C7.24264 21.3015 7.24264 32.6985 14.2721 39.7279C21.3015 46.7574 32.6985 46.7574 39.7279 39.7279Z"
-        style={{ pathLength: scrollYProgress }}
-      />
+      <rect
+        height="10px"
+        width={(progress * 100).toString() + "%"}
+        fill="var(--txt)"
+      ></rect>
     </svg>
   );
 };
