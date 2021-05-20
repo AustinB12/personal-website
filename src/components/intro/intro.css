@@ -15,11 +15,19 @@
   .introWrapper .introContent {
     width: 95vw;
   }
+  .introWrapper .introContent #meSvg {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 @media only screen and (min-width: 601px) {
   .introWrapper .introContent {
     width: 80vw;
+  }
+  .introWrapper .introContent #meSvg {
+    width: 30vw;
+    height: 30vw;
   }
 }
 
