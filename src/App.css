@@ -29,6 +29,7 @@ a:visited {
 .light-theme {
   --bg: #fcf8ec;
   --txt: #292929;
+  --txt-nums: 41, 41, 41;
   --accent: #ededed;
   --acc-light: #6e6e6e;
   --acc-dark: #4d4d4d;
@@ -37,6 +38,7 @@ a:visited {
 .dark-theme {
   --bg: #0d1117;
   --txt: #eff8ff;
+  --txt-nums: 239, 248, 255;
   --accent: #717177;
   --acc-light: #dad9e4;
   --acc-dark: #424a55;
@@ -45,6 +47,7 @@ a:visited {
 .red-theme {
   --bg: #521a1a;
   --txt: #eff8ff;
+  --txt-nums: 239, 248, 255;
   --accent: #bd4444;
   --acc-light: #e79c9c;
   --acc-dark: #330505;
@@ -53,6 +56,7 @@ a:visited {
 .blue-theme {
   --bg: #292457;
   --txt: #eff8ff;
+  --txt-nums: 239, 248, 255;
   --accent: #344ac9;
   --acc-light: #7d8ff0;
   --acc-dark: #15113f;
@@ -61,6 +65,7 @@ a:visited {
 .green-theme {
   --bg: #2e5a2d;
   --txt: #eff8ff;
+  --txt-nums: 239, 248, 255;
   --accent: #29a73a;
   --acc-light: #5ce973;
   --acc-dark: #185318;
@@ -70,4 +75,45 @@ a:visited {
   position: fixed;
   top: -1;
   left: 0;
+}
+
+:root {
+  /* Light Theme:  */
+  --light-bg: #fcf8ec;
+  --light-text: #0f0f0f;
+  --light-accentLight: #dfdfdf;
+  --light-accentMedium: #ededed;
+  --light-accentDark: #456268;
+
+  /* Dark Theme:  */
+  --dark-bg: #0d1117;
+  --dark-textColor: #eff8ff;
+  --dark-accentLight: #616872;
+  --dark-accentMedium: #424a55;
+  --dark-accentDark: #161b22;
+
+  /* Dark */
+  --dark-bg: #0d1117;
+  --dark-txt: #eff8ff;
+  --dark-accent: #424a55;
+
+  /* Light */
+  --light-bg: #fcf8ec;
+  --light-txt: #0f0f0f;
+  --light-accent: #ededed;
+
+  /* Red */
+  --red-bg: #e7a298;
+  --red-txt: #0f0f0f;
+  --red-accent: #bd4444;
+
+  /* Blue */
+  --blue-bg: #849fe9;
+  --blue-txt: #0f0f0f;
+  --blue-accent: #344ac9;
+
+  /* Green */
+  --green-bg: #7ae076;
+  --green-txt: #0f0f0f;
+  --green-accent: #29a73a;
 }

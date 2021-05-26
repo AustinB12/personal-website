@@ -90,7 +90,7 @@ const Intro = () => {
                         width="427"
                         height="427"
                         rx="213.5"
-                        fill="#59E290"
+                        fill="var(--accent)"
                       />
                       <rect
                         width="427"
@@ -197,7 +197,11 @@ const Intro = () => {
                         </g>
                       </g>
                       <g id="Eyes">
-                        <rect
+                        <motion.rect
+                          animate={{
+                            x: transformX * 2,
+                            y: transformY * 2,
+                          }}
                           id="Rectangle 8"
                           x="160"
                           y="169"
@@ -219,7 +223,11 @@ const Intro = () => {
                           rx="7.5"
                           fill="#3F2806"
                         />
-                        <rect
+                        <motion.rect
+                          animate={{
+                            x: transformX * 2,
+                            y: transformY * 2,
+                          }}
                           id="Rectangle 10"
                           x="237"
                           y="169"
@@ -445,26 +453,19 @@ const Intro = () => {
               </g>
               <defs>
                 <linearGradient
-                  id="paint0_linear"
-                  x1="213.5"
-                  y1="0"
-                  x2="213.5"
-                  y2="427"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#30C9DE" />
-                  <stop offset="1" stopColor="#39E4E4" stopOpacity="0" />
-                </linearGradient>
-                <linearGradient
                   id="paint1_linear"
                   x1="213.5"
-                  y1="0"
+                  y1="427"
                   x2="213.5"
-                  y2="427"
+                  y2="0"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#30C9DE" />
-                  <stop offset="1" stopColor="#39E4E4" stopOpacity="0" />
+                  <stop stopColor="var(--accent-light)" />
+                  <stop
+                    offset="1"
+                    stopColor="var(--accent-light)"
+                    stopOpacity="0"
+                  />
                 </linearGradient>
               </defs>
             </svg>

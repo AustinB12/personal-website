@@ -76,6 +76,10 @@
   cursor: pointer;
 }
 
+.headerWrapper .narrow #burger:hover {
+  cursor: pointer;
+}
+
 /** === Theme Stuff === **/
 
 .headerWrapper .wide {
@@ -99,8 +103,4 @@
   .headerWrapper .narrow {
     display: none;
   }
-}
-
-#burger g rect {
-  fill: var(--txt);
 }

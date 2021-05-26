@@ -22,7 +22,11 @@ const SideTheme = (props) => {
           exit="closed"
           transition={{ damping: 5 }}
         >
-          <div className={"stuff-container"}>
+          <div
+            className={"stuff-container"}
+            role={"button"}
+            onClick={() => props.setTheme(false)}
+          >
             <div className={"color-container"}>
               <motion.div
                 aria-checked
@@ -86,11 +90,6 @@ const SideTheme = (props) => {
               </motion.div>
             </div>
           </div>
-          <div
-            className={"outside-container"}
-            role={"button"}
-            onClick={() => props.setTheme(false)}
-          ></div>
         </motion.nav>
       )}
     </AnimatePresence>

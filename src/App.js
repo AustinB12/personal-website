@@ -7,7 +7,6 @@ import Me from "./pages/Contact/me";
 import { ScrollIndicator } from "./components/scrollIndicator/indicator";
 
 import "./App.css";
-import "./variables.css";
 
 const App = () => {
   const [isTheme, setTheme] = useState("dark-theme");
