@@ -1,13 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import "./skills.css";
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={"skillsWrapper"} id="Skills">
       <div className="skillsContent">
-        <h3>Skills</h3>
+        <h3>{t("skills")}</h3>
         <div className={"icon-holder"}>
           <div className={"skill-category frontEndTech"}>
             <div className={"label-holder"}>

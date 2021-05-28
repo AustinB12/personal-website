@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 import Header from "../../components/header/header";
 import Intro from "../../components/intro/intro";
@@ -11,16 +11,18 @@ import "./home.css";
 const Home = (props) => {
   return (
     <div className="Home-Container">
-      <Header
-        currentTheme={props.currentTheme}
-        changeTheme={props.changeTheme}
-      />
-      <div className={"Home-Content"}>
-        <Intro />
-        <Skills />
-        <Projects />
-      </div>
-      <Footer />
+      <Suspense fallback="Loading...">
+        <Header
+          currentTheme={props.currentTheme}
+          changeTheme={props.changeTheme}
+        />
+        <div className={"Home-Content"}>
+          <Intro />
+          <Skills />
+          <Projects />
+        </div>
+        <Footer />
+      </Suspense>
     </div>
   );
 };

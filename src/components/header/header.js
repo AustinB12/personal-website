@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import SideNav from "./sideNav/sideNav";
 import SideTheme from "./sideTheme/sideTheme";
-import { motion } from "framer-motion";
+import LangPicker from "./langPicker/langPicker";
 
 import { ReactComponent as PaintBrush } from "../../assets/paintbrush.svg";
 
@@ -29,6 +31,7 @@ const Header = (props) => {
         <div role="button" onClick={() => setThemeOpen(true)}>
           <PaintBrush />
         </div>
+        <LangPicker />
         <SideTheme
           changeTheme={props.changeTheme}
           isOpen={isThemeOpen}

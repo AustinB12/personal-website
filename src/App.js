@@ -4,6 +4,9 @@ import { Route, BrowserRouter as BR, Switch } from "react-router-dom";
 import Home from "./pages/Home/home";
 import Blog from "./pages/Blog/blog";
 import Me from "./pages/Contact/me";
+import JsHome from "./pages/Blog/js/jsHome";
+import PythonHome from "./pages/Blog/python/pythonHome";
+
 import { ScrollIndicator } from "./components/scrollIndicator/indicator";
 
 import "./App.css";
@@ -48,7 +51,8 @@ const App = () => {
           ></Route>
           <Route exact path="/blog/csharp" component={blogWithProps}></Route>
           <Route exact path="/blog/go" component={blogWithProps}></Route>
-          <Route exact path="/blog/js" component={blogWithProps}></Route>
+          <Route exact path="/blog/js" component={JsHome}></Route>
+          <Route exact path="/blog/python" component={PythonHome}></Route>
           <Route exact path="/blog/sql" component={blogWithProps}></Route>
           <Route exact path="/blog/html" component={blogWithProps}></Route>
           <Route exact path="/blog/css" component={blogWithProps}></Route>

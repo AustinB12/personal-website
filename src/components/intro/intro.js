@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import "./intro.css";
 
@@ -37,6 +38,7 @@ const Intro = () => {
     setTransformX(((cursorX - offsetX / 2) / (svgX / 2)).toFixed(8) - 1);
     setTransformY(((cursorY - (introY / 2 + 50)) / svgY).toFixed(8) - 0.5);
   }
+  const { t } = useTranslation();
 
   return (
     <div
@@ -47,8 +49,12 @@ const Intro = () => {
     >
       <div className="introContent">
         <article>
-          <h3>Hi, I'm Austin Baird</h3>
-          <p>and I'm a web developer.</p>
+          <h3>
+            {t("title")}, {t("I-am")} Austin Baird
+          </h3>
+          <p>
+            {t("and")} {t("im-web-dev")}.
+          </p>
           <div ref={ref}>
             <svg
               id="meSvg"
