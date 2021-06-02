@@ -1,16 +1,22 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
+
 import Header from "../../components/header/header";
 
 import "./me.css";
 
-import React from "react";
 const Me = (props) => {
+  const { t } = useTranslation();
+
   return (
     <div className={"me-wrapper"}>
       <Header
+        lang={props.lang}
+        setLang={props.setLang}
         currentTheme={props.currentTheme}
         changeTheme={props.changeTheme}
       />
-      <h1>Contact Me!</h1>
+      <h1>{t("contact-me")}!</h1>
       <article>
         <p>Email: austinzbaird@gmail.com</p>
         <p>

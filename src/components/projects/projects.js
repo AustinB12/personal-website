@@ -1,13 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./projects.css";
 import Repo from "../githubrepo/repo";
 
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <div className={"projectsWrapper"} id="Projects">
       <div className="projectsContent">
-        <h3>Projects</h3>
+        <h3>{t("projects")}</h3>
         <Repo
           title={"personal-website"}
           desc={

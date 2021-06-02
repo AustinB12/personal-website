@@ -17,6 +17,8 @@ const Blog = (props) => {
   return (
     <div className={"blog-wrapper"}>
       <Header
+        lang={props.lang}
+        setLang={props.setLang}
         currentTheme={props.currentTheme}
         changeTheme={props.changeTheme}
       />

@@ -13,6 +13,8 @@ const Home = (props) => {
     <div className="Home-Container">
       <Suspense fallback="Loading...">
         <Header
+          lang={props.lang}
+          setLang={props.setLang}
           currentTheme={props.currentTheme}
           changeTheme={props.changeTheme}
         />

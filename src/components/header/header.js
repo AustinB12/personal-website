@@ -31,7 +31,7 @@ const Header = (props) => {
         <div role="button" onClick={() => setThemeOpen(true)}>
           <PaintBrush />
         </div>
-        <LangPicker />
+        <LangPicker lang={props.lang} setLang={props.setLang} />
         <SideTheme
           changeTheme={props.changeTheme}
           isOpen={isThemeOpen}

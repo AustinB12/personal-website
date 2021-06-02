@@ -69,6 +69,10 @@
   justify-content: flex-start;
 }
 
+.headerWrapper .theme-wrapper > * {
+  padding-right: 6px;
+}
+
 .headerWrapper .theme-wrapper svg {
   width: 25px;
   height: 25px;

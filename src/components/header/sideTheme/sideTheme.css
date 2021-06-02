@@ -11,7 +11,7 @@
 
 .sideTheme-wrapper .stuff-container {
   background-color: rgba(var(--txt-nums), 0.5);
-  padding: 10px;
+  /* padding: 10px; */
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -21,13 +21,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: auto;
+  height: 100%;
+  width: 100%;
   flex-direction: column;
 }
 
 .sideTheme-wrapper .stuff-container .color-container > * {
   width: 50%;
-  height: 100px;
+  height: 20%;
 
   margin: 0;
 
@@ -44,29 +45,29 @@
   font-size: 2em;
 }
 
-#dark {
+.sideTheme-wrapper #dark {
   background-color: var(--dark-bg);
   color: var(--dark-txt);
-  border: 8px solid var(--dark-accent);
+  /* border: 8px solid var(--dark-accent); */
 }
-#light {
+.sideTheme-wrapper #light {
   background-color: var(--light-bg);
   color: var(--light-txt);
-  border: 8px solid var(--light-accent);
+  /* border: 8px solid var(--light-accent); */
 }
-#red {
+.sideTheme-wrapper #red {
   background-color: var(--red-bg);
   color: var(--red-txt);
-  border: 8px solid var(--red-accent);
+  /* border: 8px solid var(--red-accent); */
 }
-#blue {
+.sideTheme-wrapper #blue {
   background-color: var(--blue-bg);
   color: var(--blue-txt);
-  border: 8px solid var(--blue-accent);
+  /* border: 8px solid var(--blue-accent); */
 }
 
-#green {
+.sideTheme-wrapper #green {
   background-color: var(--green-bg);
   color: var(--green-txt);
-  border: 8px solid var(--green-accent);
+  /* border: 8px solid var(--green-accent); */
 }

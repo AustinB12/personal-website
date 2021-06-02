@@ -40,6 +40,9 @@ const Intro = () => {
   }
   const { t } = useTranslation();
 
+  console.log(transformX);
+  console.log(transformY);
+
   return (
     <div
       className={"introWrapper"}

@@ -2,6 +2,8 @@
   height: max-content;
 
   display: flex;
+
+  font-size: calc(4px + 1vw);
 }
 
 .footer-wrapper div {
@@ -15,26 +17,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: calc(2px + 1vw);
 }
 
 .footer-wrapper .socials span {
   margin-right: 8px;
+  text-align: center;
 }
 
 .footer-wrapper .socials a {
   margin: 0px 8px;
 }
 
-/* .footer-wrapper .socials a svg > * {
-  fill: var(--acc-light);
-} */
-
 @media only screen and (max-width: 600px) {
   .footer-wrapper .socials svg {
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -51,8 +48,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: calc(2px + 1vw);
 }
 
 .footer-wrapper .backToTop:hover {
