@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 
 import Header from "../../components/header/header";
 import Intro from "../../components/intro/intro";
@@ -11,7 +11,6 @@ import "./home.css";
 const Home = (props) => {
   return (
     <div className="Home-Container">
-      <Suspense fallback="Loading...">
         <Header
           lang={props.lang}
           setLang={props.setLang}
@@ -24,7 +23,6 @@ const Home = (props) => {
           <Projects />
         </div>
         <Footer />
-      </Suspense>
     </div>
   );
 };
