@@ -7,5 +7,8 @@
     "im-web-dev": "sou um desenvolvedor web",
     "skills": "Habilidades",
     "projects": "Projetos",
-    "contact-me": "Me Contata"
+    "contact-me": "Me Contata",
+    "blog" : {
+        "title": "Bem-vindo ao Meu Blog"
+    }
 }

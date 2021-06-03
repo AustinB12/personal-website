@@ -5,7 +5,7 @@ const PythonHome = () => {
   return (
     <div className="python-home-wrapper">
       <Header></Header>
-      <h2>Python Home</h2>;
+      <h2>Python Home</h2>
     </div>
   );
 };

@@ -7,5 +7,8 @@
     "im-web-dev": "I'm a web developer",
     "skills": "Skills",
     "projects": "Projects",
-    "contact-me": "Contact Me"
+    "contact-me": "Contact Me",
+    "blog" : {
+        "title": "Welcome to My Blog"
+    }
 }
