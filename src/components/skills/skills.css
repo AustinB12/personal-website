@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .skillsWrapper .skillsContent {
@@ -14,49 +15,89 @@
   height: 90%;
 }
 
+.skillsWrapper .skillsContent .exp-holder {
+  width: 40%;
+  height: 100%;
+}
+
+.skillsWrapper .skillsContent .skills-body {
+  display: flex;
+  align-items: center;
+}
+
 .skillsWrapper .skillsContent h3 {
   font-size: calc(15px + 3vw);
   margin: 0;
 }
 
-.icon-holder {
+.skillsWrapper .skillsContent .icon-holder {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  width: 60%;
 }
 
-.icon-holder svg {
-  min-width: calc(10px + 2vw);
-  min-height: calc(10px + 2vw);
+.skillsWrapper .skillsContent .icon-holder svg {
+  min-width: calc(16px + 2vw);
+  min-height: calc(16px + 2vw);
 }
 
-.skill-category {
+.skillsWrapper .skillsContent .skill-category {
   display: flex;
   flex-direction: row;
-  padding-bottom: 10px;
+  padding-bottom: 18px;
   margin-left: 12px;
+  text-align: start;
 }
 
-.aSkill {
+.skill-category .aSkill {
   margin-left: 10px;
 }
 
 /*? Fills in the SVGs with a theme color */
-.aSkill svg > * {
+.skill-category .aSkill svg > * {
   fill: var(--acc-light);
 }
 
-span {
+.skill-category .aSkill span {
   text-align: left;
 }
 
-.label-holder {
+.skillsWrapper .skillsContent .label-holder {
   display: flex;
   justify-content: left;
   align-items: center;
   width: 30%;
 }
 
-.label-holder span {
+.skillsWrapper .skillsContent .label-holder span {
   font-size: calc(5px + 2vw);
+}
+
+@media only screen and (max-width: 600px) {
+  .skillsWrapper .skillsContent .skills-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .skillsWrapper .skillsContent .exp-holder {
+    width: 80%;
+  }
+  .skillsWrapper .skillsContent .icon-holder {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .skillsWrapper .skillsContent .icon-holder svg {
+    min-width: calc(20px + 2vw);
+    min-height: calc(20px + 2vw);
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .skillsWrapper .skillsContent .skills-body {
+    display: flex;
+    align-items: center;
+  }
 }

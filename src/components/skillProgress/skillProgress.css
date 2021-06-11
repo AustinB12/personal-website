@@ -1,0 +1,25 @@
+.svg {
+  max-width: 100%;
+}
+
+.svg-circle-bg {
+  fill: none;
+}
+
+.svg-circle {
+  fill: none;
+}
+
+.svg-circle-text {
+  font-size: calc(16px + 2vw);
+  text-anchor: middle;
+  fill: var(--txt);
+  font-weight: bold;
+}
+
+.progress-wrapper h4 {
+  font-size: calc(10px + 1vw);
+  margin: 0;
+  padding-bottom: 6px;
+  color: var(--txt);
+}
