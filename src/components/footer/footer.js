@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import "./footer.css";
 
@@ -8,13 +9,14 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const { t } = useTranslation();
   return (
     <div className={"footer-wrapper"}>
       <div className={"backToTop"}>
-        <span onClick={() => scrollTop()}>Click To Scroll To Top</span>
+        <span onClick={() => scrollTop()}>{t("footer.scroll")}</span>
       </div>
       <div className={"socials"}>
-        <span>I make coding tik toks!</span>
+        <span>{t("footer.toks")}</span>
         <motion.a
           href="https://www.tiktok.com/@foraloop"
           whileHover={{
@@ -60,14 +62,14 @@ const Footer = () => {
           >
             <g id="Twitter">
               <g id="Vector 1">
-                <mask id="path-1-inside-1" fill="white">
+                <mask id="path-1-inside-1000" fill="white">
                   <path d="M4 9.5C12.2335 17.965 17.8354 20.7748 29.5 22.5C29.0863 21.4301 29 21 29 19.5C29 13.5 34 7 41.5 7C45.5 7 47.8052 8.27001 50.5 11L58 8C56.8726 11.5379 55.7756 12.9588 53 14.5C55.7466 14.6846 57.2491 14.3245 60 13C58.0072 15.8158 56.7973 17.3213 54 19.5C54 40 39 56 18.5 56C12 56 5.73131 53.9054 0 50.5C8.34983 50.8537 12.0407 49.3218 18 45.5C12.5899 44.5881 10.051 42.7814 6.5 37C9.02235 37.2663 10.2683 37.2084 12 36.5C5.70144 34.8338 3.5959 32.2353 2.5 24.5C4.78238 25.6775 6.01069 26.0377 8 25.5C2.45941 21.6308 1.70618 18.0542 4 9.5Z" />
                 </mask>
                 <path
                   d="M4 9.5C12.2335 17.965 17.8354 20.7748 29.5 22.5C29.0863 21.4301 29 21 29 19.5C29 13.5 34 7 41.5 7C45.5 7 47.8052 8.27001 50.5 11L58 8C56.8726 11.5379 55.7756 12.9588 53 14.5C55.7466 14.6846 57.2491 14.3245 60 13C58.0072 15.8158 56.7973 17.3213 54 19.5C54 40 39 56 18.5 56C12 56 5.73131 53.9054 0 50.5C8.34983 50.8537 12.0407 49.3218 18 45.5C12.5899 44.5881 10.051 42.7814 6.5 37C9.02235 37.2663 10.2683 37.2084 12 36.5C5.70144 34.8338 3.5959 32.2353 2.5 24.5C4.78238 25.6775 6.01069 26.0377 8 25.5C2.45941 21.6308 1.70618 18.0542 4 9.5Z"
                   stroke="var(--acc-light)"
                   strokeWidth="3"
-                  mask="url(#path-1-inside-1)"
+                  mask="url(#path-1-inside-1000)"
                 />
               </g>
             </g>

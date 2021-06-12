@@ -10,5 +10,15 @@
     "contact-me": "Contact Me",
     "blog" : {
         "title": "Welcome to My Blog"
-    }
+    },
+    "header": {
+        "home": "Home",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "footer": {
+        "scroll": "Click here to scroll to the top",
+        "toks": "I make coding tok toks"
+    },
+    "email": "Email"
 }

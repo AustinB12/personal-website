@@ -10,5 +10,15 @@
     "contact-me": "Contactame",
     "blog" : {
         "title": "Bienvenido a mi Blog"
-    }
+    },
+    "header": {
+        "home": "Casa",
+        "blog": "Blog",
+        "contact": "Contactarme"
+    },
+    "footer": {
+        "scroll": "Haga clic para desplazarse a la parte superior",
+        "toks": "Hago codificación de tik toks"
+    },
+    "email": "Correo electrónico"
 }

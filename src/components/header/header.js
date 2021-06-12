@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import SideNav from "./sideNav/sideNav";
 import SideTheme from "./sideTheme/sideTheme";
@@ -13,6 +14,8 @@ import "./header.css";
 const Header = (props) => {
   const [isNavOpen, setNavOpen] = useState(false);
   const [isThemeOpen, setThemeOpen] = useState(false);
+
+  const { t } = useTranslation();
 
   const Path = (props) => (
     <motion.path
@@ -41,13 +44,13 @@ const Header = (props) => {
       <nav className={"wide"}>
         <ul className={"link-holder"}>
           <Link to="/">
-            <li className={"header-item"}>Home</li>
+            <li className={"header-item"}>{t("header.home")}</li>
           </Link>
           <Link to="/blog">
-            <li className={"header-item"}>Blog</li>
+            <li className={"header-item"}>{t("header.blog")}</li>
           </Link>
           <Link to="/me">
-            <li className={"header-item"}>Contact Me</li>
+            <li className={"header-item"}>{t("header.contact")}</li>
           </Link>
         </ul>
       </nav>
@@ -89,46 +92,6 @@ const Header = (props) => {
             />
           </svg>
         </div>
-        {/* <div role="button" onClick={() => setNavOpen(true)}>
-          <svg
-            id="burger"
-            width="36"
-            height="16"
-            viewBox="0 0 36 16"
-            fill="none"
-          >
-            <motion.rect
-              initial="initial"
-              animate={answer}
-              variants={variants2}
-              width="36"
-              height="4"
-              rx="3"
-              y="0"
-              fill="white"
-            />
-            <motion.rect
-              initial="initial"
-              animate={answer}
-              variants={variants}
-              width="36"
-              height="4"
-              rx="3"
-              y="12"
-              fill="white"
-            />
-            <motion.rect
-              initial="initial"
-              animate={answer}
-              variants={variants}
-              width="36"
-              height="4"
-              rx="3"
-              y="6"
-              fill="white"
-            />
-          </svg>
-        </div> */}
         <SideNav isOpen={isNavOpen} setNav={setNavOpen} />
       </nav>
     </div>

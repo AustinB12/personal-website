@@ -18,7 +18,7 @@ const Me = (props) => {
       />
       <h1>{t("contact-me")}!</h1>
       <article>
-        <p>Email: austinzbaird@gmail.com</p>
+        <p>{t("email")}: austinzbaird@gmail.com</p>
         <p>
           LinkedIn:{" "}
           <a href="https://www.linkedin.com/in/%F0%9F%92%BB-austin-baird-2a1490171/">
