@@ -4,9 +4,15 @@ import { motion } from "framer-motion";
 
 import Header from "../../components/header/header";
 
-import "./me.css";
+import { ReactComponent as Bob } from "../../assets/BobFront.svg";
+import { ReactComponent as Linda } from "../../assets/LindaFront.svg";
+import { ReactComponent as Tina } from "../../assets/TinaFront.svg";
+import { ReactComponent as Noodle } from "../../assets/Noodle.svg";
+import { ReactComponent as SadDuo } from "../../assets/SadDuo.svg";
 
-const Me = (props) => {
+import "./svgs.css";
+
+const SVGs = (props) => {
   const { t } = useTranslation();
 
   const containerVariants = {
@@ -25,14 +31,13 @@ const Me = (props) => {
       transition: { ease: "easeInOut" },
     },
   };
-
   return (
     <motion.div
+      className={"svgs-container"}
       initial="hidden"
       animate="visible"
       exit="exit"
       variants={containerVariants}
-      className={"me-wrapper"}
     >
       <Header
         lang={props.lang}
@@ -40,17 +45,15 @@ const Me = (props) => {
         currentTheme={props.currentTheme}
         changeTheme={props.changeTheme}
       />
-      <h1>{t("contact-me")}!</h1>
-      <article>
-        <p>{t("email")}: austinzbaird@gmail.com</p>
-        <p>
-          LinkedIn:{" "}
-          <a href="https://www.linkedin.com/in/%F0%9F%92%BB-austin-baird-2a1490171/">
-            My Profile
-          </a>
-        </p>
-      </article>
+      <h1>{t("svgs.under-construction")}</h1>
+      <h3>{t("svgs.sample")}</h3>
+      <Bob />
+      <Linda />
+      <Tina />
+      <Noodle />
+      <SadDuo />
     </motion.div>
   );
 };
-export default Me;
+
+export default SVGs;

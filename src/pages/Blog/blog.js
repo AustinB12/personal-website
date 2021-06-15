@@ -11,8 +11,31 @@ import "./blog.css";
 const Blog = (props) => {
   const { t } = useTranslation();
 
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.3,
+        duration: 1.2,
+      },
+    },
+    exit: {
+      x: "100vw",
+      transition: { ease: "easeInOut" },
+    },
+  };
+
   return (
-    <div className={"blog-wrapper"}>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      variants={containerVariants}
+      className={"blog-wrapper"}
+    >
       <Header
         lang={props.lang}
         setLang={props.setLang}
@@ -650,7 +673,7 @@ const Blog = (props) => {
         <p>React Fundamentals</p>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,9 +1,11 @@
 import React, { useState, Suspense } from "react";
-import { Route, BrowserRouter as BR, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 import Home from "./pages/Home/home";
 import Blog from "./pages/Blog/blog";
 import Me from "./pages/Contact/me";
+import SVGs from "./pages/svgs/svgs";
 import JsHome from "./pages/Blog/js/jsHome";
 import PythonHome from "./pages/Blog/python/pythonHome";
 
@@ -13,6 +15,7 @@ import { Loading } from "./components/loading/loading";
 import "./App.css";
 
 const App = () => {
+  const location = useLocation();
   const [isTheme, setTheme] = useState("dark-theme");
   const [lang, setLang] = useState("en");
 
@@ -53,15 +56,27 @@ const App = () => {
     );
   };
 
+  const svgsWithProps = () => {
+    return (
+      <SVGs
+        lang={lang}
+        setLang={setLang}
+        currentTheme={isTheme}
+        changeTheme={changeTheme}
+      ></SVGs>
+    );
+  };
+
   return (
     <Suspense fallback={Loading}>
-      <BR>
-        <div id={"App"} className={isTheme}>
+      <div id={"App"} className={isTheme}>
+        <AnimatePresence>
           <ScrollIndicator />
-          <Switch>
+          <Switch location={location} key={location.key}>
             <Route exact path="/" component={homeWithProps}></Route>
             <Route exact path="/me" component={meWithProps}></Route>
             <Route exact path="/blog" component={blogWithProps}></Route>
+            <Route exact path="/svg" component={svgsWithProps}></Route>
             <Route
               exact
               path="/blog/python/lists"
@@ -81,8 +96,8 @@ const App = () => {
             <Route exact path="/blog/css" component={blogWithProps}></Route>
             <Route exact path="/blog/svg" component={blogWithProps}></Route>
           </Switch>
-        </div>
-      </BR>
+        </AnimatePresence>
+      </div>
     </Suspense>
   );
 };

@@ -14,11 +14,16 @@
     "header": {
         "home": "Zuhause",
         "blog": "Blog",
-        "contact": "Kontaktiere"
+        "contact": "Kontaktiere",
+        "svgs": "SVGs"
     },
     "footer": {
         "scroll": "Klicken Sie hier, um nach oben zu scrollen",
         "toks": "Ich mache Codierungs-Tik-Toks"
     },
-    "email": "Email"
+    "email": "Email",
+    "svgs": {
+        "under-construction": "Im Bau",
+        "sample": "Aber hier ist ein Beispiel"
+    }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import "./sideNav.css";
 
@@ -11,6 +12,8 @@ const SideNav = (props) => {
     },
     closed: { x: "100%" },
   };
+
+  const { t } = useTranslation();
 
   return (
     <AnimatePresence>
@@ -38,7 +41,7 @@ const SideNav = (props) => {
                     }}
                     className={"header-item"}
                   >
-                    Home
+                    {t("header.home")}
                   </motion.li>
                 </Link>
                 <Link to="/blog">
@@ -49,7 +52,18 @@ const SideNav = (props) => {
                     }}
                     className={"header-item"}
                   >
-                    Blog
+                    {t("header.blog")}
+                  </motion.li>
+                </Link>
+                <Link to="/svg">
+                  <motion.li
+                    whileHover={{
+                      x: "10px",
+                      transition: { duration: 0.4 },
+                    }}
+                    className={"header-item"}
+                  >
+                    {t("header.svgs")}
                   </motion.li>
                 </Link>
                 <Link to="/me">
@@ -60,7 +74,7 @@ const SideNav = (props) => {
                     }}
                     className={"header-item"}
                   >
-                    Contact Me
+                    {t("header.contact")}
                   </motion.li>
                 </Link>
               </ul>

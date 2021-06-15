@@ -14,11 +14,16 @@
     "header": {
         "home": "Home",
         "blog": "Blog",
-        "contact": "Contact"
+        "contact": "Contact",
+        "svgs": "SVGs"
     },
     "footer": {
         "scroll": "Click here to scroll to the top",
         "toks": "I make coding tok toks"
     },
-    "email": "Email"
+    "email": "Email",
+    "svgs": {
+        "under-construction": "Under Construction",
+        "sample": "But here's a sample"
+    }
 }

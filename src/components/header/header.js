@@ -49,6 +49,9 @@ const Header = (props) => {
           <Link to="/blog">
             <li className={"header-item"}>{t("header.blog")}</li>
           </Link>
+          <Link to="/svg">
+            <li className={"header-item"}>{t("header.svgs")}</li>
+          </Link>
           <Link to="/me">
             <li className={"header-item"}>{t("header.contact")}</li>
           </Link>
