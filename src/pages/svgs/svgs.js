@@ -3,12 +3,14 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
 
 import { ReactComponent as Bob } from "../../assets/BobFront.svg";
 import { ReactComponent as Linda } from "../../assets/LindaFront.svg";
 import { ReactComponent as Tina } from "../../assets/TinaFront.svg";
 import { ReactComponent as Noodle } from "../../assets/Noodle.svg";
 import { ReactComponent as SadDuo } from "../../assets/SadDuo.svg";
+import { ReactComponent as YellowShirt } from "../../assets/YellowShirt-1.svg";
 
 import "./svgs.css";
 
@@ -45,13 +47,17 @@ const SVGs = (props) => {
         currentTheme={props.currentTheme}
         changeTheme={props.changeTheme}
       />
-      <h1>{t("svgs.under-construction")}</h1>
-      <h3>{t("svgs.sample")}</h3>
-      <Bob />
-      <Linda />
-      <Tina />
-      <Noodle />
-      <SadDuo />
+      <main className={"svgs-content"}>
+        <h1>{t("svgs.under-construction")}</h1>
+        <h3>{t("svgs.sample")}</h3>
+        <Bob />
+        <Linda />
+        <Tina />
+        <Noodle />
+        <SadDuo />
+        <YellowShirt />
+      </main>
+      <Footer />
     </motion.div>
   );
 };

@@ -1,4 +1,8 @@
-.svgs-container svg {
+.svgs-container .svgs-content {
+  min-height: 100vh;
+}
+
+.svgs-container .svgs-content svg {
   width: 50vw;
   height: 50vw;
 }
