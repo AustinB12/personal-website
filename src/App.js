@@ -7,6 +7,7 @@ import Blog from "./pages/Blog/blog";
 import Me from "./pages/Contact/me";
 import SVGs from "./pages/svgs/svgs";
 import JsHome from "./pages/Blog/js/jsHome";
+import SvgHome from "./pages/Blog/svg/svgHome";
 import PythonHome from "./pages/Blog/python/pythonHome";
 
 import { ScrollIndicator } from "./components/scrollIndicator/indicator";
@@ -25,76 +26,180 @@ const App = () => {
     }
   };
 
-  const homeWithProps = () => {
-    return (
-      <Home
-        lang={lang}
-        setLang={setLang}
-        currentTheme={isTheme}
-        changeTheme={changeTheme}
-      ></Home>
-    );
-  };
-  const blogWithProps = () => {
-    return (
-      <Blog
-        lang={lang}
-        setLang={setLang}
-        currentTheme={isTheme}
-        changeTheme={changeTheme}
-      ></Blog>
-    );
-  };
-  const meWithProps = () => {
-    return (
-      <Me
-        lang={lang}
-        setLang={setLang}
-        currentTheme={isTheme}
-        changeTheme={changeTheme}
-      ></Me>
-    );
-  };
-
-  const svgsWithProps = () => {
-    return (
-      <SVGs
-        lang={lang}
-        setLang={setLang}
-        currentTheme={isTheme}
-        changeTheme={changeTheme}
-      ></SVGs>
-    );
-  };
-
   return (
     <Suspense fallback={Loading}>
       <div id={"App"} className={isTheme}>
         <AnimatePresence>
           <ScrollIndicator />
           <Switch location={location} key={location.key}>
-            <Route exact path="/" component={homeWithProps}></Route>
-            <Route exact path="/me" component={meWithProps}></Route>
-            <Route exact path="/blog" component={blogWithProps}></Route>
-            <Route exact path="/svg" component={svgsWithProps}></Route>
+            <Route
+              exact
+              path="/"
+              component={() => (
+                <Home
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Home>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/me"
+              component={() => (
+                <Me
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Me>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog"
+              component={() => (
+                <Blog
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Blog>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/svg"
+              component={() => (
+                <SVGs
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></SVGs>
+              )}
+            ></Route>
             <Route
               exact
               path="/blog/python/lists"
-              component={blogWithProps}
+              component={() => (
+                <Blog
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Blog>
+              )}
             ></Route>
             <Route
               exact
               path="/blog/python/strings"
-              component={blogWithProps}
+              component={() => (
+                <Blog
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Blog>
+              )}
             ></Route>
-            <Route exact path="/blog/csharp" component={blogWithProps}></Route>
-            <Route exact path="/blog/go" component={blogWithProps}></Route>
-            <Route exact path="/blog/js" component={JsHome}></Route>
-            <Route exact path="/blog/python" component={PythonHome}></Route>
-            <Route exact path="/blog/sql" component={blogWithProps}></Route>
-            <Route exact path="/blog/html" component={blogWithProps}></Route>
-            <Route exact path="/blog/css" component={blogWithProps}></Route>
-            <Route exact path="/blog/svg" component={blogWithProps}></Route>
+            <Route
+              exact
+              path="/blog/csharp"
+              component={() => (
+                <Blog
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Blog>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog/go"
+              component={() => (
+                <Blog
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Blog>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog/js"
+              component={() => (
+                <JsHome
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                />
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog/python"
+              component={() => (
+                <PythonHome
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                />
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog/sql"
+              component={() => (
+                <Blog
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Blog>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog/html"
+              component={() => (
+                <Blog
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Blog>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog/css"
+              component={() => (
+                <Blog
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Blog>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog/svg"
+              component={() => (
+                <SvgHome
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></SvgHome>
+              )}
+            ></Route>
           </Switch>
         </AnimatePresence>
       </div>

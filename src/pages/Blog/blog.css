@@ -5,3 +5,19 @@
 .blog-wrapper .blog-content {
   height: 84vh;
 }
+
+.blog-wrapper .blog-content ul {
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-wrapper .blog-content #workers {
+    width: 75vw;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .blog-wrapper .blog-content #workers {
+    width: 60vw;
+  }
+}

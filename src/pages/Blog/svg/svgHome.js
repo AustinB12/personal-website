@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import Header from "../../../components/header/header";
 import Footer from "../../../components/footer/footer";
 
-import "./jsHome.css";
+import "./svgHome.css";
 
-const JsHome = (props) => {
+const SvgHome = (props) => {
   const { t } = useTranslation();
 
   const containerVariants = {
@@ -33,7 +33,7 @@ const JsHome = (props) => {
       animate="visible"
       exit="exit"
       variants={containerVariants}
-      className="js-home-wrapper"
+      className="svg-home-wrapper"
     >
       <Header
         lang={props.lang}
@@ -41,12 +41,12 @@ const JsHome = (props) => {
         currentTheme={props.currentTheme}
         changeTheme={props.changeTheme}
       />
-      <main className={"js-home-content"}>
-        <h2>{t("js-home.title")}</h2>
-        <p>Sill working on this page!</p>
+      <main className={"svg-home-content"}>
+        <h2>{t("svg-home.title")}</h2>
+        <p>Still working on this page :)</p>
       </main>
       <Footer />
     </motion.div>
   );
 };
-export default JsHome;
+export default SvgHome;

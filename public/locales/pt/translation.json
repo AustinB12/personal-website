@@ -25,5 +25,14 @@
     "svgs": {
         "under-construction": "Em Construção",
         "sample": "Mas aqui está uma amostra"
+    },
+    "js-home": {
+        "title": "JavaScript"
+    },
+    "svg-home": {
+        "title": "Welcome to all things SVG 😎"
+    },
+    "python-home": {
+        "title": "Welcome to all things Python 😎"
     }
 }

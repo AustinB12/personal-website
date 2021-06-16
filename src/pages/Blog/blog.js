@@ -45,9 +45,10 @@ const Blog = (props) => {
       <div className={"blog-content"}>
         <h1>{t("blog.title")}</h1>
         <svg
-          width="458"
+          id="workers"
+          width="475"
           height="194"
-          viewBox="0 0 438 194"
+          viewBox="0 0 475 194"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -663,14 +664,24 @@ const Blog = (props) => {
           </g>
         </svg>
         <p>I'm still under construction :)</p>
-        <p>some topics to come:</p>
-        <Link to="blog/python">Python: Lists, Strings, Functions</Link>
-        <p>SVG Animations</p>
-        <p>OOP</p>
-        <p>C# / Interfaces / Dependency Injection</p>
-        <p>JS Basics</p>
-        <Link to="blog/js">JS Home</Link>
-        <p>React Fundamentals</p>
+        <p>But you can start browsing some topics to come:</p>
+        <ul>
+          <li>
+            <Link to="blog/js">JavaScript</Link>
+          </li>
+          <li>
+            <Link to="blog/python">Python: Lists, Strings, Functions</Link>
+          </li>
+          <li>
+            <Link to="blog/svg">Animating SVGs</Link>
+          </li>
+          <li>
+            <Link to="blog/svg">C# / Interfaces / Dependency Injection</Link>
+          </li>
+          <li>
+            <Link to="blog/svg">React Fundamentals</Link>
+          </li>
+        </ul>
       </div>
       <Footer />
     </motion.div>
