@@ -2,12 +2,25 @@
   height: auto;
 }
 
-.blog-wrapper .blog-content {
-  height: 84vh;
+/* .blog-wrapper .blog-content {
+  height: 94vh;
+} */
+
+.blog-wrapper .blog-content #blog-title {
+  font-size: 6vw;
+  margin-top: 0;
 }
 
-.blog-wrapper .blog-content ul {
-  text-align: left;
+.blog-wrapper .blog-content .home-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-wrapper .blog-content .home-holder .a-home {
+  width: 45vw;
+  height: 200px;
+  border: 2px solid green;
 }
 
 @media only screen and (max-width: 600px) {

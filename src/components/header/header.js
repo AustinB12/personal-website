@@ -31,7 +31,7 @@ const Header = (props) => {
   return (
     <div className={"headerWrapper"}>
       <div className={"theme-wrapper"}>
-        <div role="button" onClick={() => setThemeOpen(true)}>
+        <div role="button" aria-label="Theme Selector" onClick={() => setThemeOpen(true)}>
           <PaintBrush />
         </div>
         <LangPicker lang={props.lang} setLang={props.setLang} />

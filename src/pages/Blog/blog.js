@@ -43,7 +43,7 @@ const Blog = (props) => {
         changeTheme={props.changeTheme}
       />
       <div className={"blog-content"}>
-        <h1>{t("blog.title")}</h1>
+        <h1 id={"blog-title"}>{t("blog.title")}!</h1>
         <svg
           id="workers"
           width="475"
@@ -665,23 +665,23 @@ const Blog = (props) => {
         </svg>
         <p>I'm still under construction :)</p>
         <p>But you can start browsing some topics to come:</p>
-        <ul>
-          <li>
+        <div className={"home-holder"}>
+          <div className={"a-home"}>
             <Link to="blog/js">JavaScript</Link>
-          </li>
-          <li>
+          </div>
+          <div className={"a-home"}>
             <Link to="blog/python">Python: Lists, Strings, Functions</Link>
-          </li>
-          <li>
+          </div>
+          <div className={"a-home"}>
             <Link to="blog/svg">Animating SVGs</Link>
-          </li>
-          <li>
+          </div>
+          <div className={"a-home"}>
             <Link to="blog/svg">C# / Interfaces / Dependency Injection</Link>
-          </li>
-          <li>
+          </div>
+          <div className={"a-home"}>
             <Link to="blog/svg">React Fundamentals</Link>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
       <Footer />
     </motion.div>

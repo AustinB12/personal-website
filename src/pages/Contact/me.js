@@ -64,13 +64,13 @@ const Me = (props) => {
                 id="Vector 1"
                 d="M106 32L106 75C106 84 106 85 114.5 85H141.5"
                 stroke="black"
-                stroke-width="3"
+                strokeWidth="3"
               />
               <path
                 id="Vector 2"
                 d="M200.5 32L200.5 75C200.5 84 200.5 85 192 85H165"
                 stroke="black"
-                stroke-width="3"
+                strokeWidth="3"
               />
               <path
                 id="Rectangle 1"
