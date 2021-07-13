@@ -30,7 +30,7 @@ const App = () => {
     <Suspense fallback={Loading}>
       <div id={"App"} className={isTheme}>
         <AnimatePresence>
-          <ScrollIndicator />
+          <ScrollIndicator key="scroll-indicator" />
           <Switch location={location} key={location.key}>
             <Route
               exact

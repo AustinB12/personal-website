@@ -23,7 +23,9 @@ const Footer = () => {
             y: "-6px",
             transition: { duration: 0.4 },
           }}
+          alt="For A Loop Tik Tok Page"
         >
+          TikTok
           <svg
             width="54"
             height="62"
@@ -52,7 +54,9 @@ const Footer = () => {
             y: "-6px",
             transition: { duration: 0.4 },
           }}
+          alt="Austins Twitter Profile"
         >
+          Twitter
           <svg
             width="60"
             height="60"
@@ -81,7 +85,9 @@ const Footer = () => {
             y: "-6px",
             transition: { duration: 0.4 },
           }}
+          alt="Austin's GitHub Page"
         >
+          GitHub
           <svg viewBox="0 0 128 128">
             <g fill="var(--acc-light)">
               <path

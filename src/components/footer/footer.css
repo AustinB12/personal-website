@@ -26,12 +26,20 @@
 
 .footer-wrapper .socials a {
   margin: 0px 8px;
+  font-size: 10px;
+  display: flex;
 }
 
 @media only screen and (max-width: 600px) {
   .footer-wrapper .socials svg {
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 28px;
+  }
+  .footer-wrapper .socials a {
+    font-size: 8px;
+  }
+  .footer-wrapper .socials span {
+    display: none;
   }
 }
 

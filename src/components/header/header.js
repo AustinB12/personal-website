@@ -31,7 +31,11 @@ const Header = (props) => {
   return (
     <div className={"headerWrapper"}>
       <div className={"theme-wrapper"}>
-        <div role="button" aria-label="Theme Selector" onClick={() => setThemeOpen(true)}>
+        <div
+          role="button"
+          aria-label="Theme Selector"
+          onClick={() => setThemeOpen(true)}
+        >
           <PaintBrush />
         </div>
         <LangPicker lang={props.lang} setLang={props.setLang} />
@@ -42,20 +46,20 @@ const Header = (props) => {
         />
       </div>
       <nav className={"wide"}>
-        <ul className={"link-holder"}>
-          <Link to="/">
-            <li className={"header-item"}>{t("header.home")}</li>
+        <div className={"link-holder"}>
+          <Link className={"header-item"} to="/">
+            {t("header.home")}
           </Link>
-          <Link to="/blog">
-            <li className={"header-item"}>{t("header.blog")}</li>
+          <Link className={"header-item"} to="/blog">
+            {t("header.blog")}
           </Link>
-          <Link to="/svg">
-            <li className={"header-item"}>{t("header.svgs")}</li>
+          <Link className={"header-item"} to="/svg">
+            {t("header.svgs")}
           </Link>
-          <Link to="/me">
-            <li className={"header-item"}>{t("header.contact")}</li>
+          <Link className={"header-item"} to="/me">
+            {t("header.contact")}
           </Link>
-        </ul>
+        </div>
       </nav>
 
       <nav className={"narrow"}>
