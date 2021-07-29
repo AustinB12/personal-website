@@ -22,6 +22,9 @@
   height: 200px;
   border: 2px solid green;
 }
+.blog-wrapper .blog-content .home-holder .a-home.javascript svg {
+  height: 100%;
+}
 
 @media only screen and (max-width: 600px) {
   .blog-wrapper .blog-content #workers {
