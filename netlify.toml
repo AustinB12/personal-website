@@ -4,4 +4,4 @@ publish = "build/"
 command = "npm run build"
 
 [functions]
-directory = "functions"
+directory = "netlify/functions"

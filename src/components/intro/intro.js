@@ -43,7 +43,7 @@ const Intro = () => {
   async function getHello() {
     console.log("in func");
     const res = await fetch(
-      "http://localhost:3000/.netlify/functions/hello-world",
+      "http://austinbaird.software/.netlify/functions/hello-world",
       {
         headers: {
           "Content-Type": "application/json",
