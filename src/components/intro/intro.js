@@ -40,6 +40,21 @@ const Intro = () => {
   }
   const { t } = useTranslation();
 
+  async function getHello() {
+    console.log("in func");
+    const res = await fetch(
+      "http://localhost:3000/.netlify/functions/hello-world",
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }
+    ).then((response) => response.json());
+
+    console.log(res);
+  }
+
   return (
     <div
       className={"introWrapper"}
@@ -63,6 +78,7 @@ const Intro = () => {
               viewBox="0 0 427 427"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              onClick={() => getHello()}
             >
               <g id="ItsMe-Circle">
                 <g id="BG">
