@@ -9,11 +9,26 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  async function getHello() {
+    console.log("in func");
+    const res = await fetch(
+      "http://localhost:3000/.netlify/functions/hello-world",
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }
+    ).then((response) => response.json());
+
+    console.log(res);
+  }
+
   const { t } = useTranslation();
   return (
     <div className={"footer-wrapper"}>
       <div className={"backToTop"}>
-        <span onClick={() => scrollTop()}>{t("footer.scroll")}</span>
+        <span onClick={() => getHello()}>{t("footer.scroll")}</span>
       </div>
       <div className={"socials"}>
         <span>{t("footer.toks")}</span>
