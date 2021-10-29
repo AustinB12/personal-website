@@ -47,6 +47,9 @@ const Header = (props) => {
       </div>
       <nav className={"wide"}>
         <div className={"link-holder"}>
+          <Link className={"header-item"} to="/survey">
+            Survey
+          </Link>
           <Link className={"header-item"} to="/">
             {t("header.home")}
           </Link>
