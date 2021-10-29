@@ -48,6 +48,7 @@ const Intro = () => {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
+          mode: "no-cors",
         },
       }
     ).then((response) => response.json());

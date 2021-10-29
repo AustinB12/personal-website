@@ -7,8 +7,11 @@ import Blog from "./pages/Blog/blog";
 import Me from "./pages/Contact/me";
 import SVGs from "./pages/svgs/svgs";
 import JsHome from "./pages/Blog/js/jsHome";
+import JsPostStrings from "./pages/Blog/js/jsPosts/strings/strings";
 import SvgHome from "./pages/Blog/svg/svgHome";
 import PythonHome from "./pages/Blog/python/pythonHome";
+
+import Survey from "./components/survey/survey";
 
 import { ScrollIndicator } from "./components/scrollIndicator/indicator";
 import { Loading } from "./components/loading/loading";
@@ -42,6 +45,18 @@ const App = () => {
                   currentTheme={isTheme}
                   changeTheme={changeTheme}
                 ></Home>
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/survey"
+              component={() => (
+                <Survey
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Survey>
               )}
             ></Route>
             <Route
@@ -133,6 +148,18 @@ const App = () => {
               path="/blog/js"
               component={() => (
                 <JsHome
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                />
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/blog/js/strings"
+              component={() => (
+                <JsPostStrings
                   lang={lang}
                   setLang={setLang}
                   currentTheme={isTheme}

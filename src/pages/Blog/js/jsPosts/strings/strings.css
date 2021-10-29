@@ -1,0 +1,7 @@
+.post-wrapper {
+  min-height: 100vh;
+}
+
+.post-wrapper .post-content-wrapper {
+  min-height: calc(100vh - 50px);
+}

@@ -8,6 +8,9 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact-me": "Contact Me",
+    "contact": {
+        "resume": "Click here to download my resume"
+    },
     "blog" : {
         "title": "Welcome to My Blog"
     },

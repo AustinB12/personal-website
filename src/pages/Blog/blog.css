@@ -1,4 +1,5 @@
 .blog-wrapper {
+  min-height: 100vh;
   height: auto;
 }
 
@@ -20,7 +21,10 @@
 .blog-wrapper .blog-content .home-holder .a-home {
   width: 45vw;
   height: 200px;
-  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
 }
 .blog-wrapper .blog-content .home-holder .a-home.javascript svg {
   height: 100%;

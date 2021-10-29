@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import Header from "../../../components/header/header";
 import Footer from "../../../components/footer/footer";
@@ -43,7 +44,11 @@ const JsHome = (props) => {
       />
       <main className={"js-home-content"}>
         <h2>{t("js-home.title")}</h2>
-        <p>Sill working on this page!</p>
+        <div className="posts-wrapper">
+          <div className="blog-post">
+            <Link to="/blog/js/strings">Strings</Link>
+          </div>
+        </div>
       </main>
       <Footer />
     </motion.div>

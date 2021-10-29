@@ -8,6 +8,9 @@
     "skills": "Habilidades",
     "projects": "Proyectos",
     "contact-me": "Contactame",
+    "contact": {
+        "resume": "Haga clic aquí para descargar mi currículum"
+    },
     "blog" : {
         "title": "Bienvenido a mi Blog"
     },

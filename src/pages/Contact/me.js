@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import Header from "../../components/header/header";
 
+import resume from "../../assets/Resume-Austin-Baird-2021.pdf";
+
 import "./me.css";
 
 const Me = (props) => {
@@ -47,6 +49,11 @@ const Me = (props) => {
           LinkedIn:{" "}
           <a href="https://www.linkedin.com/in/%F0%9F%92%BB-austin-baird-2a1490171/">
             My Profile
+          </a>
+        </p>
+        <p>
+          <a href={resume} download={resume}>
+            {t("contact.resume")}
           </a>
         </p>
       </article>
