@@ -1,7 +1,5 @@
 .skillsWrapper {
-  /* Dimensions */
   height: auto;
-  overflow: auto;
 
   display: flex;
   align-items: center;

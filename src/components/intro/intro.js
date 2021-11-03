@@ -41,7 +41,6 @@ const Intro = () => {
   const { t } = useTranslation();
 
   async function getHello() {
-    console.log("in func");
     const res = await fetch(
       "https://austinbaird.software/.netlify/functions/hello-world",
       {

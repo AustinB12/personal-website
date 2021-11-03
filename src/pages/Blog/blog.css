@@ -1,11 +1,10 @@
 .blog-wrapper {
-  min-height: 100vh;
   height: auto;
 }
 
-/* .blog-wrapper .blog-content {
-  height: 94vh;
-} */
+.blog-wrapper .blog-content {
+  min-height: 100vh;
+}
 
 .blog-wrapper .blog-content #blog-title {
   font-size: 6vw;

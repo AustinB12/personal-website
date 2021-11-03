@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-import SkillProgress from "../skillProgress/skillProgress"; 
+import SkillProgress from "../skillProgress/skillProgress";
 
 import "./skills.css";
 
@@ -13,87 +13,87 @@ const Skills = () => {
 
   const skillsInfo = {
     react: {
-      yrs: 2,
-      name: "React"
+      yrs: 2.5,
+      name: "React",
     },
     angular: {
       yrs: 1,
-      name: "Angular"
+      name: "Angular",
     },
     html: {
       yrs: 4,
-      name: "HTML"
+      name: "HTML",
     },
     css: {
       yrs: 4,
-      name: "CSS"
+      name: "CSS",
     },
     less: {
-      yrs: 2,
-      name: "LESS"
+      yrs: 2.5,
+      name: "LESS",
     },
     sass: {
-      yrs: 2,
-      name: "SASS"
+      yrs: 2.5,
+      name: "SASS",
     },
     dotnet: {
       yrs: 4,
-      name: ".NET"
+      name: ".NET",
     },
     node: {
       yrs: 2,
-      name: "Node JS"
+      name: "Node JS",
     },
     graphql: {
       yrs: 1,
-      name: "GraphQL"
+      name: "GraphQL",
     },
     csharp: {
       yrs: 4,
-      name: "C#"
+      name: "C#",
     },
     js: {
       yrs: 3,
-      name: "JavaScript"
+      name: "JavaScript",
     },
     ts: {
       yrs: 1,
-      name: "TypeScript"
+      name: "TypeScript",
     },
     python: {
       yrs: 4,
-      name: "Python"
+      name: "Python",
     },
     go: {
       yrs: 1,
-      name: "Go"
+      name: "Go",
     },
     git: {
       yrs: 4,
-      name: "Git"
+      name: "Git",
     },
     github: {
       yrs: 4,
-      name: "GitHub"
+      name: "GitHub",
     },
     npm: {
       yrs: 3,
-      name: "NPM"
+      name: "NPM",
     },
     bitbucket: {
       yrs: 2,
-      name: "Bitbucket"
+      name: "Bitbucket",
     },
-  }
+  };
 
   let sizer = window.innerWidth;
-  let strokeWidth = 0
+  let strokeWidth = 0;
   if (sizer > 600) {
-    sizer = sizer * .18;
+    sizer = sizer * 0.18;
     strokeWidth = 15;
   } else {
     strokeWidth = 8;
-    sizer = sizer * .5;
+    sizer = sizer * 0.5;
   }
 
   return (
@@ -101,7 +101,6 @@ const Skills = () => {
       <div className="skillsContent">
         <h3>{t("skills")}</h3>
         <div className={"skills-body"}>
-
           <div className={"icon-holder"}>
             <div className={"skill-category frontEndTech"}>
               <div className={"label-holder"}>
@@ -109,7 +108,7 @@ const Skills = () => {
               </div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('react')}
+                onClick={() => setSkill("react")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -125,7 +124,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('angular')}
+                onClick={() => setSkill("angular")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -141,7 +140,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('html')}
+                onClick={() => setSkill("html")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -157,7 +156,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('css')}
+                onClick={() => setSkill("css")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -177,7 +176,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('less')}
+                onClick={() => setSkill("less")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -195,7 +194,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('sass')}
+                onClick={() => setSkill("sass")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -218,7 +217,7 @@ const Skills = () => {
               </div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('dotnet')}
+                onClick={() => setSkill("dotnet")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -252,7 +251,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('node')}
+                onClick={() => setSkill("node")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -268,7 +267,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('graphql')}
+                onClick={() => setSkill("graphql")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -302,7 +301,7 @@ const Skills = () => {
               </div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('csharp')}
+                onClick={() => setSkill("csharp")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -317,7 +316,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('js')}
+                onClick={() => setSkill("js")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -333,7 +332,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('ts')}
+                onClick={() => setSkill("ts")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -350,7 +349,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('python')}
+                onClick={() => setSkill("python")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -366,7 +365,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('go')}
+                onClick={() => setSkill("go")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -386,7 +385,7 @@ const Skills = () => {
               </div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('git')}
+                onClick={() => setSkill("git")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -402,7 +401,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('github')}
+                onClick={() => setSkill("github")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -422,7 +421,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('npm')}
+                onClick={() => setSkill("npm")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -440,7 +439,7 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 className={"aSkill"}
-                onClick={() => setSkill('bitbucket')}
+                onClick={() => setSkill("bitbucket")}
                 whileHover={{
                   scale: 1.05,
                   transition: { duration: 0.3 },
@@ -461,20 +460,17 @@ const Skills = () => {
               </motion.div>
             </div>
           </div>
-        
-          
-          <div className={"exp-holder"}>
-              <SkillProgress
-                name={selectedSkill ? skillsInfo[selectedSkill].name : ""} 
-                size={sizer}
-                strokeWidth={strokeWidth}
-                progress={selectedSkill ? skillsInfo[selectedSkill].yrs : 0}
-                circleOneStroke={'var(--acc-dark)'}
-                circleTwoStroke={'var(--txt)'}>
-              </SkillProgress>
-            
-          </div>
 
+          <div className={"exp-holder"}>
+            <SkillProgress
+              name={selectedSkill ? skillsInfo[selectedSkill].name : ""}
+              size={sizer}
+              strokeWidth={strokeWidth}
+              progress={selectedSkill ? skillsInfo[selectedSkill].yrs : 0}
+              circleOneStroke={"var(--acc-dark)"}
+              circleTwoStroke={"var(--txt)"}
+            ></SkillProgress>
+          </div>
         </div>
       </div>
     </div>

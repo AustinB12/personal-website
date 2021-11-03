@@ -33,17 +33,6 @@ const SideNav = (props) => {
           >
             <div className={"stuff-container"}>
               <ul className={"link-holder"}>
-                <Link to="/survey">
-                  <motion.li
-                    whileHover={{
-                      x: "10px",
-                      transition: { duration: 0.4 },
-                    }}
-                    className={"header-item"}
-                  >
-                    Survey
-                  </motion.li>
-                </Link>
                 <Link to="/">
                   <motion.li
                     whileHover={{
