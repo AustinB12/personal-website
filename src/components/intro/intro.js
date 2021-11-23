@@ -1,8 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
 
 import "./intro.css";
+
+const api = axios.create({
+  baseURL: `http://localhost:3001/`,
+  headers: {
+    get: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  },
+});
 
 const Intro = () => {
   const [cursorX, setCursorX] = useState(0);
@@ -13,6 +23,7 @@ const Intro = () => {
   const [svgY, setSvgY] = useState(0);
   const [transformX, setTransformX] = useState(0);
   const [transformY, setTransformY] = useState(0);
+  const [theData, setData] = useState("");
 
   const offsetX = introX - svgX;
 
@@ -40,20 +51,12 @@ const Intro = () => {
   }
   const { t } = useTranslation();
 
-  async function getHello() {
-    const res = await fetch(
-      "https://austinbaird.software/.netlify/functions/hello-world",
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          mode: "no-cors",
-        },
-      }
-    ).then((response) => response.json());
-
-    console.log(res);
-  }
+  const getData = () => {
+    api.get("/").then((res) => {
+      console.log(res);
+      setData(res.data.key);
+    });
+  };
 
   return (
     <div
@@ -70,6 +73,8 @@ const Intro = () => {
           <p>
             {t("and")} {t("im-web-dev")}.
           </p>
+          <button onClick={() => getData()}>Click Me</button>
+          <p>{theData}</p>
           <div ref={ref}>
             <svg
               id="meSvg"

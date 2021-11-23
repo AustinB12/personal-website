@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.1",
     "browserslist": "^4.16.6",
     "css-loader": "^5.2.7",
     "framer-motion": "^2.9.5",
