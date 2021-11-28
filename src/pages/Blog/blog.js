@@ -64,6 +64,9 @@ const Blog = (props) => {
           <div className={"a-home"}>
             <Link to="blog/svg">React</Link>
           </div>
+          <div className={"a-home"}>
+            <Link to="blog/svg">Programming / Software Development Topics</Link>
+          </div>
         </div>
       </div>
       <Footer />

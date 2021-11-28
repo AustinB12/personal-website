@@ -1,18 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import axios from "axios";
 
 import "./intro.css";
-
-const api = axios.create({
-  baseURL: `http://localhost:3001/`,
-  headers: {
-    get: {
-      "Access-Control-Allow-Origin": "*",
-    },
-  },
-});
 
 const Intro = () => {
   const [cursorX, setCursorX] = useState(0);
@@ -23,7 +13,6 @@ const Intro = () => {
   const [svgY, setSvgY] = useState(0);
   const [transformX, setTransformX] = useState(0);
   const [transformY, setTransformY] = useState(0);
-  const [theData, setData] = useState("");
 
   const offsetX = introX - svgX;
 
@@ -51,13 +40,6 @@ const Intro = () => {
   }
   const { t } = useTranslation();
 
-  const getData = () => {
-    api.get("/").then((res) => {
-      console.log(res);
-      setData(res.data.key);
-    });
-  };
-
   return (
     <div
       className={"introWrapper"}
@@ -73,153 +55,119 @@ const Intro = () => {
           <p>
             {t("and")} {t("im-web-dev")}.
           </p>
-          <button onClick={() => getData()}>Click Me</button>
-          <p>{theData}</p>
           <div ref={ref}>
             <svg
-              id="meSvg"
               width="427"
               height="427"
               viewBox="0 0 427 427"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              onClick={() => getHello()}
+              id="meSvg"
             >
-              <g id="ItsMe-Circle">
-                <g id="BG">
+              <g id="MaFace">
+                <g id="Mask Group">
                   <mask
-                    id="meMask001"
-                    mask-type="alpha"
+                    id="mask0_101_63"
+                    style={{ maskType: "alpha" }}
                     maskUnits="userSpaceOnUse"
                     x="0"
                     y="0"
                     width="427"
                     height="427"
                   >
-                    <g id="Rectangle 2">
+                    <g id="Rectangle 61">
                       <rect
                         width="427"
                         height="427"
                         rx="213.5"
-                        fill="#59E290"
+                        fill="var(--acc-dark)"
                       />
                       <rect
                         width="427"
                         height="427"
                         rx="213.5"
-                        fill="url(#paint0_linear)"
+                        fill="url(#paint0_linear_101_63)"
+                        fillOpacity="0.66"
                       />
                     </g>
                   </mask>
-                  <g mask="url(#meMask001)">
-                    <g id="Rectangle 1">
+                  <g mask="url(#mask0_101_63)">
+                    <g id="Rectangle 46">
+                      <rect width="427" height="427" fill="var(--acc-dark)" />
                       <rect
                         width="427"
                         height="427"
-                        rx="213.5"
-                        fill="var(--accent)"
-                      />
-                      <rect
-                        width="427"
-                        height="427"
-                        rx="213.5"
-                        fill="url(#paint1_linear)"
+                        fill="url(#paint1_linear_101_63)"
+                        fillOpacity="0.66"
                       />
                     </g>
-                    <g id="Body">
+                    <g id="Head">
                       <g id="Neck">
-                        <path
-                          id="Rectangle 4"
-                          d="M179 273H248V362C221.054 374.612 205.946 374.222 179 362V273Z"
-                          fill="#FFF3D2"
+                        <rect
+                          x="178"
+                          y="357.555"
+                          width="71"
+                          height="111"
+                          fill="#FFC5B7"
                         />
-                        <path
-                          id="Rectangle 5"
-                          d="M179 256H248V315C221.281 329.3 206.185 330.008 179 315V256Z"
-                          fill="#B87888"
-                          fillOpacity="0.22"
-                        />
-                      </g>
-                      <g id="Ears">
-                        <ellipse
-                          id="Ellipse 2"
-                          cx="116.5"
-                          cy="210"
-                          rx="17.5"
-                          ry="23"
-                          fill="#FBEECD"
-                        />
-                        <ellipse
-                          id="Ellipse 8"
-                          rx="17.5"
-                          ry="23"
-                          transform="matrix(-1 0 0 1 313.5 210)"
-                          fill="#FBEECD"
-                        />
-                        <path
-                          id="Vector 2"
-                          d="M119 220.5C119.5 213 107 210.5 107 210.5"
-                          stroke="#403D3A"
-                          strokeOpacity="0.61"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                        />
-                        <path
-                          id="Vector 6"
-                          d="M310.015 218C309.515 210.5 322.015 208 322.015 208"
-                          stroke="#403D3A"
-                          strokeOpacity="0.61"
-                          strokeWidth="2"
-                          strokeLinecap="round"
+                        <rect
+                          x="178"
+                          y="357.555"
+                          width="71"
+                          height="111"
+                          fill="url(#paint2_linear_101_63)"
+                          fillOpacity="0.2"
                         />
                       </g>
                       <path
-                        id="Rectangle 2_2"
-                        d="M122 124H306V209.5C306 264.5 262 307.5 232 307.5H196C172 307.5 122 256 122 209.5V124Z"
-                        fill="#FFF3D2"
+                        id="Rectangle 11"
+                        d="M88 162.555C88 123.895 119.34 92.5552 158 92.5552H269C307.66 92.5552 339 123.895 339 162.555V246.555C339 256.496 330.941 264.555 321 264.555H106C96.0589 264.555 88 256.496 88 246.555V162.555Z"
+                        fill="#745100"
                       />
-                      <g id="Eyebrows">
-                        <path
-                          id="Vector 4"
-                          d="M161 165C170.783 160.117 181.964 159.768 190 163.605"
-                          stroke="#655A4A"
-                          strokeWidth="4"
-                          strokeLinecap="round"
-                        />
-                        <path
-                          id="Vector 5"
-                          d="M268 165C258.217 160.117 247.036 159.768 239 163.605"
-                          stroke="#655A4A"
-                          strokeWidth="4"
-                          strokeLinecap="round"
-                        />
-                      </g>
-                      <g id="MouthAndNose">
-                        <path
-                          id="Vector 3"
-                          d="M224.5 229C219.5 233 212.5 233 207 229"
-                          stroke="#403D3A"
-                          strokeOpacity="0.5"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                        />
-                        <g id="Mouth">
+                      <path
+                        id="Rectangle 1"
+                        d="M98 198.555C98 143.327 142.772 98.5552 198 98.5552H228C283.228 98.5552 328 143.327 328 198.555V262.555C328 326.068 276.513 377.555 213 377.555V377.555C149.487 377.555 98 326.068 98 262.555V198.555Z"
+                        fill="#FFC5B7"
+                      />
+                      <g id="Mask Group_2">
+                        <mask
+                          id="mask1_101_63"
+                          style={{ maskType: "alpha" }}
+                          maskUnits="userSpaceOnUse"
+                          x="98"
+                          y="98"
+                          width="230"
+                          height="300"
+                        >
                           <path
-                            id="Ellipse 9"
-                            d="M185 265.5C185 271.733 188.266 277.71 194.08 282.117C199.893 286.524 207.778 289 216 289C224.222 289 232.107 286.524 237.92 282.117C243.734 277.71 247 271.733 247 265.5L216 265.5H185Z"
-                            fill="#9D543C"
+                            id="Rectangle 9"
+                            d="M98 158.555C98 125.418 124.863 98.5552 158 98.5552H268C301.137 98.5552 328 125.418 328 158.555V282.555C328 346.068 276.513 397.555 213 397.555V397.555C149.487 397.555 98 346.068 98 282.555V158.555Z"
+                            fill="#FFC5B7"
+                          />
+                        </mask>
+                        <g mask="url(#mask1_101_63)">
+                          <rect
+                            id="Rectangle 7"
+                            x="-17"
+                            y="84.5552"
+                            width="154"
+                            height="124"
+                            rx="46"
+                            fill="#745100"
+                          />
+                          <rect
+                            id="Rectangle 8"
+                            x="281"
+                            y="84.5552"
+                            width="154"
+                            height="124"
+                            rx="46"
+                            fill="#745100"
                           />
                           <path
-                            id="Intersect"
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M234.096 284.51C228.88 281.605 222.573 280.013 216.052 280.013C209.531 280.013 203.223 281.605 198.008 284.51C203.223 287.415 209.531 289.007 216.052 289.007C222.573 289.007 228.88 287.415 234.096 284.51Z"
-                            fill="#FF7AAA"
-                          />
-                          <path
-                            id="Rectangle 12"
-                            d="M185 261C185 260.448 185.448 260 186 260H246C246.552 260 247 260.448 247 261V265.5H185V261Z"
-                            fill="white"
+                            id="Rectangle 10"
+                            d="M123 63.5552C123 38.1501 143.595 17.5552 169 17.5552H250C275.405 17.5552 296 38.1501 296 63.5552V110.215C296 129.195 284.448 146.621 266.237 151.968C226.371 163.674 195.137 163.258 153.857 151.662C135.138 146.403 123 128.72 123 109.276V63.5552Z"
+                            fill="#745100"
                           />
                         </g>
                       </g>
@@ -229,270 +177,135 @@ const Intro = () => {
                             x: transformX * 2,
                             y: transformY * 2,
                           }}
-                          id="Rectangle 8"
-                          x="160"
-                          y="169"
-                          width="32"
-                          height="45"
-                          rx="16"
-                          fill="white"
-                        />
-                        <motion.rect
-                          animate={{
-                            x: transformX * 5,
-                            y: transformY * 5,
-                          }}
-                          id="Rectangle 9"
-                          x="169"
-                          y="186"
-                          width="15"
-                          height="20"
-                          rx="7.5"
-                          fill="#3F2806"
+                          id="Rectangle 4"
+                          x="161"
+                          y="169.555"
+                          width="40"
+                          height="70"
+                          rx="20"
+                          fill="#FFFFFD"
                         />
                         <motion.rect
                           animate={{
                             x: transformX * 2,
                             y: transformY * 2,
                           }}
-                          id="Rectangle 10"
-                          x="237"
-                          y="169"
-                          width="32"
-                          height="45"
-                          rx="16"
-                          fill="white"
+                          id="Rectangle 5"
+                          x="226"
+                          y="169.555"
+                          width="40"
+                          height="70"
+                          rx="20"
+                          fill="#FFFFFD"
                         />
-                        <motion.rect
+                        <motion.path
                           animate={{
                             x: transformX * 5,
                             y: transformY * 5,
                           }}
-                          id="Rectangle 11"
-                          x="245"
-                          y="186"
-                          width="15"
-                          height="20"
-                          rx="7.5"
-                          fill="#3F2806"
+                          id="Subtract"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M169 201.545C175.119 201.283 180 196.239 180 190.055C180 189.564 179.969 189.079 179.909 188.604C180.269 188.572 180.632 188.555 181 188.555C187.627 188.555 193 193.928 193 200.555V218.555C193 225.183 187.627 230.555 181 230.555C174.373 230.555 169 225.183 169 218.555V201.545Z"
+                          fill="#3D3D3D"
+                        />
+                        <motion.path
+                          animate={{
+                            x: transformX * 5,
+                            y: transformY * 5,
+                          }}
+                          id="Subtract_2"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M234 201.545C240.119 201.283 245 196.239 245 190.055C245 189.564 244.969 189.079 244.909 188.604C245.269 188.572 245.632 188.555 246 188.555C252.627 188.555 258 193.928 258 200.555V218.555C258 225.183 252.627 230.555 246 230.555C239.373 230.555 234 225.183 234 218.555V201.545Z"
+                          fill="#3D3D3D"
                         />
                       </g>
-                      <g id="Hair">
-                        <path
-                          id="Rectangle 3"
-                          d="M136.5 91.5C108 97.5 106.018 145.286 122.5 148.5C122.5 148.5 134.5 163.5 145 146C155.5 128.5 181.5 137 228.5 144.5C275.5 152 260.81 139.474 269.5 141.5C289.464 156.363 298.691 160.033 309 152C319.309 143.967 314.5 99.5 289 85C266.5 34.5 153.5 58 136.5 91.5Z"
-                          fill="#785624"
-                        />
-                        <path
-                          id="Vector 11"
-                          d="M121 208C127.926 177.05 140.774 157.696 127 140.717C123.569 136.885 116.049 134.159 113.414 153.918C110.779 173.677 115.373 198.206 121 208Z"
-                          fill="#785624"
-                        />
-                        <path
-                          id="Vector 12"
-                          d="M306.111 208C299.185 177.05 286.337 157.696 300.111 140.717C303.542 136.885 311.063 134.159 313.698 153.918C316.333 173.677 311.738 198.206 306.111 208Z"
-                          fill="#785624"
-                        />
-                        <path
-                          id="Vector 13"
-                          d="M258 67.5C248.5 62.5 226.5 61.5 215 63"
-                          stroke="#9E7434"
-                          strokeOpacity="0.75"
-                          strokeWidth="8"
-                          strokeLinecap="round"
-                        />
-                        <path
-                          id="Vector 14"
-                          d="M280.5 83.5C278 80 271.5 73.5 266 71.5"
-                          stroke="#9E7434"
-                          strokeOpacity="0.75"
-                          strokeWidth="8"
-                          strokeLinecap="round"
-                        />
-                      </g>
-                    </g>
-                    <g id="Shirt">
                       <path
-                        id="Rectangle 6"
-                        d="M55 376.905C88.7065 351.475 114.18 334.315 179 333V367H248V333C314.754 334.813 369 374.81 371 376.905C373 379 375.5 381.5 375.5 387V427H50.5V385C50.5 381 51 379.922 55 376.905Z"
-                        fill="#485E51"
+                        id="Ellipse 2"
+                        d="M225 253.055C225 259.406 219.851 264.555 213.5 264.555C207.149 264.555 202 259.406 202 253.055C202 246.704 207 233.555 213.5 229.555C220 233.555 225 246.704 225 253.055Z"
+                        fill="#F1A672"
                       />
-                      <g id="Buttons">
-                        <rect
-                          id="Rectangle 13"
-                          x="209"
-                          y="366"
-                          width="11"
-                          height="61"
-                          fill="#44534A"
-                        />
-                        <g id="Button">
-                          <circle
-                            id="Ellipse 10"
-                            cx="214.5"
-                            cy="420.5"
-                            r="3.25"
-                            fill="#303733"
-                            stroke="#545454"
-                            strokeWidth="0.5"
-                          />
-                          <circle
-                            id="Ellipse 11"
-                            cx="213.5"
-                            cy="419.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 12"
-                            cx="213.5"
-                            cy="421.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 13"
-                            cx="215.5"
-                            cy="421.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 14"
-                            cx="215.5"
-                            cy="419.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                        </g>
-                        <g id="Button_2">
-                          <circle
-                            id="Ellipse 10_2"
-                            cx="214.5"
-                            cy="400.5"
-                            r="3.25"
-                            fill="#303733"
-                            stroke="#545454"
-                            strokeWidth="0.5"
-                          />
-                          <circle
-                            id="Ellipse 11_2"
-                            cx="213.5"
-                            cy="399.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 12_2"
-                            cx="213.5"
-                            cy="401.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 13_2"
-                            cx="215.5"
-                            cy="401.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 14_2"
-                            cx="215.5"
-                            cy="399.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                        </g>
-                        <g id="Button_3">
-                          <circle
-                            id="Ellipse 10_3"
-                            cx="214.5"
-                            cy="380.5"
-                            r="3.25"
-                            fill="#303733"
-                            stroke="#545454"
-                            strokeWidth="0.5"
-                          />
-                          <circle
-                            id="Ellipse 11_3"
-                            cx="213.5"
-                            cy="379.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 12_3"
-                            cx="213.5"
-                            cy="381.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 13_3"
-                            cx="215.5"
-                            cy="381.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                          <circle
-                            id="Ellipse 14_3"
-                            cx="215.5"
-                            cy="379.5"
-                            r="0.5"
-                            fill="#545454"
-                          />
-                        </g>
-                      </g>
-                      <g id="Collar">
-                        <path
-                          id="Vector 15"
-                          d="M248 343.5C246 347.5 226.13 363.332 214.5 366L238 390.5C250 375.5 253.5 351 254 346.5C254.5 342 254.094 331.444 248 333C250.236 337.213 250 339.5 248 343.5Z"
-                          fill="#61786A"
-                        />
-                        <path
-                          id="Vector 16"
-                          d="M179.154 343.655C181.154 347.655 203.024 363.487 214.654 366.155L191.154 390.655C179.154 375.655 173.654 351.155 173.154 346.655C172.654 342.155 173.06 331.599 179.154 333.155C176.918 337.368 177.154 339.655 179.154 343.655Z"
-                          fill="#61786A"
-                        />
-                      </g>
-                      <g id="Pocket">
-                        <rect
-                          id="Rectangle 16"
-                          x="291"
-                          y="408"
-                          width="49"
-                          height="7"
-                          fill="#61786A"
-                        />
-                        <rect
-                          id="Rectangle 17"
-                          x="291"
-                          y="415"
-                          width="49"
-                          height="12"
-                          fill="#506859"
-                        />
-                      </g>
+                      <path
+                        id="Union"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M168 264.555C175.732 264.555 182 270.823 182 278.555C182 287.555 187 289.555 199 289.555C206.732 289.555 213 295.823 213 303.555C213 311.287 206.732 317.555 199 317.555C177.5 317.555 154 297.555 154 278.555C154 270.823 160.268 264.555 168 264.555Z"
+                        fill="white"
+                      />
+                      <motion.path
+                        animate={{
+                          x: transformX * 2,
+                          y: transformY * 2,
+                        }}
+                        id="Vector 3"
+                        d="M148 241.555V231.055C151.294 225.256 171.361 232.856 199 241.555H148Z"
+                        fill="#FFC5B7"
+                      />
+                      <circle
+                        id="Ellipse 5"
+                        cx="88"
+                        cy="211.555"
+                        r="19"
+                        fill="#FFC5B7"
+                      />
+                      <circle
+                        id="Ellipse 6"
+                        cx="339"
+                        cy="211.555"
+                        r="19"
+                        fill="#FFC5B7"
+                      />
+                      <path
+                        id="Vector 4"
+                        d="M143.128 102.007C143.128 102.007 127.279 44.5556 182.088 61.0416C191.702 63.9334 198.37 67.0096 202.829 70.1166C210.681 55.6447 227.356 42.0611 262.651 45.5548C333.308 52.5488 296.328 110 296.328 110L143.128 102.007Z"
+                        fill="#745100"
+                      />
                     </g>
                   </g>
                 </g>
               </g>
               <defs>
                 <linearGradient
-                  id="paint1_linear"
-                  x1="213.5"
-                  y1="427"
-                  x2="213.5"
-                  y2="0"
+                  id="paint0_linear_101_63"
+                  x1="329.728"
+                  y1="73.1085"
+                  x2="-45.8755"
+                  y2="368.708"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="var(--accent-light)" />
+                  <stop stopColor="var(--acc-light)" />
                   <stop
                     offset="1"
-                    stopColor="var(--accent-light)"
+                    stopColor="var(--acc-dark)"
                     stopOpacity="0"
                   />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_101_63"
+                  x1="329.728"
+                  y1="73.1085"
+                  x2="-45.8755"
+                  y2="368.708"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="var(--acc-light)" />
+                  <stop
+                    offset="1"
+                    stopColor="var(--acc-dark)"
+                    stopOpacity="0"
+                  />
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_101_63"
+                  x1="213.5"
+                  y1="357.555"
+                  x2="213.5"
+                  y2="468.555"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="var(--bg)" />
+                  <stop offset="1" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
