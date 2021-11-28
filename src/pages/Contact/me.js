@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import Header from "../../components/header/header";
 
-import resume from "../../assets/Resume-Austin-Baird-2021.pdf";
+import resume from "../../assets/AustinBaird-Resume-2021.pdf";
 
 import "./me.css";
 
