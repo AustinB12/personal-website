@@ -18,9 +18,11 @@ const Projects = () => {
           link={"https://github.com/AustinB12/personal-website"}
         ></Repo>
         <Repo
-          title={"twitter-bot"}
-          desc={"A python twitter bot that tweets out the nation debt."}
-          link={"https://github.com/AustinB12/twitter-bot"}
+          title={"Boston Mock Departure Board"}
+          desc={
+            "A simple Web App to simulate a Subway station in Boston. Uses the MBTA API."
+          }
+          link={"https://github.com/AustinB12/MBTA-Board"}
         ></Repo>
         <Repo
           title={"Blue Karma website"}

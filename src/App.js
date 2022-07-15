@@ -59,6 +59,18 @@ const App = () => {
             ></Route>
             <Route
               exact
+              path="/tutor"
+              component={() => (
+                <Me
+                  lang={lang}
+                  setLang={setLang}
+                  currentTheme={isTheme}
+                  changeTheme={changeTheme}
+                ></Me>
+              )}
+            ></Route>
+            <Route
+              exact
               path="/blog"
               component={() => (
                 <Blog
