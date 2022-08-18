@@ -1,0 +1,18 @@
+.tutoring-container {
+    min-height: 100vh;
+}
+
+.tutoring-content {
+    min-height: calc(98vh - 180px);
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 40px;
+}
+
+.tutoring-content > * {
+    border: 2px solid green;
+}
+
+.tutoring-content .right-side {
+    text-align: left;
+}
