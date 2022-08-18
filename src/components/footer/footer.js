@@ -1,22 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 
 import "./footer.css";
 
 const Footer = () => {
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const { t } = useTranslation();
   return (
     <div className={"footer-wrapper"}>
-      <div className={"backToTop"}>
-        <span onClick={() => scrollTop()}>{t("footer.scroll")}</span>
-      </div>
       <div className={"socials"}>
-        <span>{t("footer.toks")}</span>
         <motion.a
           href="https://www.tiktok.com/@foraloop"
           whileHover={{
@@ -25,7 +15,6 @@ const Footer = () => {
           }}
           alt="For A Loop Tik Tok Page"
         >
-          TikTok
           <svg
             width="54"
             height="62"
@@ -56,7 +45,6 @@ const Footer = () => {
           }}
           alt="Austins Twitter Profile"
         >
-          Twitter
           <svg
             width="60"
             height="60"
@@ -87,7 +75,6 @@ const Footer = () => {
           }}
           alt="Austin's GitHub Page"
         >
-          GitHub
           <svg viewBox="0 0 128 128">
             <g fill="var(--acc-light)">
               <path
