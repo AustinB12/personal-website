@@ -18,16 +18,16 @@
         "home": "Casa",
         "blog": "Blog",
         "contact": "Contato",
-        "svgs": "SVGs"
-    },
-    "footer": {
-        "scroll": "Clique para rolar para o topo",
-        "toks": "Eu faço codificação tik toks"
+        "svgs": "SVGs",
+        "tutor": "Tutoria"
     },
     "email": "E-mail",
     "svgs": {
         "under-construction": "Em Construção",
         "sample": "Mas aqui está uma amostra"
+    },
+    "tutor": {
+        "title": "Coding Tutoring"
     },
     "js-home": {
         "title": "JavaScript"
