@@ -6,6 +6,7 @@ import Home from "./pages/Home/home";
 import Blog from "./pages/Blog/blog";
 import Me from "./pages/Contact/me";
 import SVGs from "./pages/svgs/svgs";
+import Tutor from "./pages/Tutoring/tutor";
 import JsHome from "./pages/Blog/js/jsHome";
 import JsPostStrings from "./pages/Blog/js/jsPosts/strings/strings";
 import SvgHome from "./pages/Blog/svg/svgHome";
@@ -61,12 +62,12 @@ const App = () => {
               exact
               path="/tutor"
               component={() => (
-                <Me
+                <Tutor
                   lang={lang}
                   setLang={setLang}
                   currentTheme={isTheme}
                   changeTheme={changeTheme}
-                ></Me>
+                ></Tutor>
               )}
             ></Route>
             <Route

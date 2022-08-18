@@ -77,6 +77,17 @@ const SideNav = (props) => {
                     {t("header.contact")}
                   </motion.li>
                 </Link>
+                <Link to="/tutor">
+                  <motion.li
+                    whileHover={{
+                      x: "10px",
+                      transition: { duration: 0.4 },
+                    }}
+                    className={"header-item"}
+                  >
+                    {t("header.tutor")}
+                  </motion.li>
+                </Link>
               </ul>
             </div>
           </div>

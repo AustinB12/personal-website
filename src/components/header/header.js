@@ -59,6 +59,9 @@ const Header = (props) => {
           <Link className={"header-item"} to="/me">
             {t("header.contact")}
           </Link>
+          <Link to="/tutor">
+            <motion.li className={"header-item"}>{t("header.tutor")}</motion.li>
+          </Link>
         </div>
       </nav>
 
