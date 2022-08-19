@@ -50,5 +50,13 @@
       "last 1 safari version"
     ]
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.0.1",
+  "peerDependencies": {
+    "@babel/plugin-syntax-flow": "*",
+    "@babel/plugin-transform-react-jsx": "*",
+    "node-sass": "*",
+    "react-is": "*",
+    "typescript": "*",
+    "webpack": "*"
+  }
 }
