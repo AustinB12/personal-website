@@ -21,9 +21,9 @@
     "react-i18next": "^11.11.4",
     "react-router-dom": "^5.2.0",
     "react-script": "^2.0.5",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-select": "^4.1.0",
-    "sass-loader": "^6.0.0",
+    "sass-loader": "^13.2.0",
     "serialize-javascript": "^6.0.0",
     "sockjs": "^0.3.21",
     "styled-components": "^5.2.1"
